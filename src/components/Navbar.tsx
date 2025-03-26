@@ -49,8 +49,8 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/73748d0b-35a0-4b8c-8d8e-cd6611a36814.png" 
-              alt="Vecinos Comunicação Visual Logo" 
+              src="/lovable-uploads/4a841dc2-665a-4586-805c-82508d7f8e04.png" 
+              alt="Vecinos Gráfica Logo" 
               className="h-10 mr-2" 
             />
           </Link>
@@ -84,8 +84,8 @@ const Navbar = () => {
         <div className="container mx-auto px-4 py-5 flex justify-between items-center">
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/73748d0b-35a0-4b8c-8d8e-cd6611a36814.png" 
-              alt="Vecinos Comunicação Visual Logo" 
+              src="/lovable-uploads/4a841dc2-665a-4586-805c-82508d7f8e04.png" 
+              alt="Vecinos Gráfica Logo" 
               className="h-8" 
             />
           </div>
