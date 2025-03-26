@@ -64,8 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				vecinos: {
-					blue: '#0047AB',
-					orange: '#ff6200',
+					primary: '#EB0090', // Bright pink accent from logo
+					dark: '#1A1A1A',    // Dark/black from logo
+					light: '#FFFFFF',   // White for contrast
+					blue: '#0047AB',    // Keeping the blue for compatibility
+					orange: '#ff6200',  // Keeping the orange for compatibility
 				}
 			},
 			borderRadius: {
