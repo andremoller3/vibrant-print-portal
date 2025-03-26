@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, FileText, Clock, Truck, Zap, Award, Users } from 'lucide-react';
@@ -48,7 +47,7 @@ const Index = () => {
     return () => observer.disconnect();
   }, []);
 
-  const heroImageUrl = "https://images.unsplash.com/photo-1561398624-13ffe4a194b1?q=80&w=2070&auto=format&fit=crop&w=1200&h=800";
+  const heroImageUrl = "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2071&auto=format&fit=crop";
 
   return (
     <>

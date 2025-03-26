@@ -29,13 +29,13 @@ const Hero = ({ title, subtitle, buttonText, buttonLink, imageUrl }: HeroProps) 
   return (
     <div 
       ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center bg-cover bg-center"
+      className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed"
       style={{ 
         backgroundImage: `url(${imageUrl})`,
       }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      {/* Overlay with improved gradient for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 text-center">
