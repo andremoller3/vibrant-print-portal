@@ -73,16 +73,6 @@ const ServiceCard = ({
             onLoad={handleImageLoad}
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
-          <div className="absolute bottom-0 left-0 w-full p-4">
-            <img 
-              src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?q=80&w=1170&auto=format&fit=crop" 
-              alt="Banner promocional" 
-              className="w-full h-auto rounded-md shadow-lg mb-2"
-            />
-            <span className="text-white text-sm font-medium">Promoção especial</span>
-          </div>
-        </div>
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold text-vecinos-blue mb-3">{title}</h3>
