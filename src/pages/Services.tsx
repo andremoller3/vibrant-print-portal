@@ -42,6 +42,7 @@ const Services = () => {
       title: "Banners, Faixas e Fachadas",
       description: "Impressão em lona de alta definição com acabamento em madeiras ou ilhós. Ideais para fachadas comerciais, eventos, feiras e divulgação.",
       imageUrl: "https://images.unsplash.com/photo-1588412079929-791b400dbd85?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      coverImageUrl: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       benefits: [
         "Alta resolução de impressão",
         "Materiais resistentes a intempéries",
@@ -53,6 +54,7 @@ const Services = () => {
       title: "Adesivos, Rótulos e Placas",
       description: "Vinil branco, transparente, perfurado ou recorte, com acabamento brilho ou fosco. Perfeitos para personalização de superfícies, identificação e decoração.",
       imageUrl: "https://images.unsplash.com/photo-1600003263592-b42a89535fa8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      coverImageUrl: "https://images.unsplash.com/photo-1600003263592-b42a89535fa8?q=80&w=1500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       benefits: [
         "Impressão com cores vivas e vibrantes",
         "Alta durabilidade mesmo em ambientes externos",
@@ -155,8 +157,38 @@ const Services = () => {
         </div>
       </div>
 
+      {/* Cover Photos for Selected Categories */}
+      <section className="py-10">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {services.slice(0, 2).map((service, index) => (
+              service.coverImageUrl && (
+                <div key={`cover-${index}`} className="relative h-64 md:h-80 overflow-hidden rounded-xl shadow-lg">
+                  <img 
+                    src={service.coverImageUrl} 
+                    alt={`Capa de ${service.title}`}
+                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <div className="p-6">
+                      <h2 className="text-2xl font-bold text-white mb-2">{service.title}</h2>
+                      <a 
+                        href="#servicos"
+                        className="inline-flex items-center text-white hover:text-vecinos-orange transition-colors"
+                      >
+                        Saiba mais <ArrowRight size={16} className="ml-1" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              )
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
-      <section ref={servicesRef} className="py-20 px-4">
+      <section ref={servicesRef} className="py-20 px-4" id="servicos">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-24">
             {services.map((service, index) => (
