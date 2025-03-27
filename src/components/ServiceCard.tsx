@@ -55,6 +55,17 @@ const ServiceCard = ({
     setImageLoaded(true);
   };
 
+  // Adicionando imagem de capa com base no título do serviço
+  const getCoverImage = () => {
+    if (title.includes("Banners") || title.includes("Faixas") || title.includes("Fachadas")) {
+      return "/lovable-uploads/3fe7386f-38dc-41d5-ae55-ccd3b021d4e6.png";
+    } else if (title.includes("Adesivos") || title.includes("Rótulos") || title.includes("Placas")) {
+      return "/lovable-uploads/3fe7386f-38dc-41d5-ae55-ccd3b021d4e6.png";
+    } else {
+      return imageUrl;
+    }
+  };
+
   return (
     <div
       ref={cardRef}
@@ -62,10 +73,16 @@ const ServiceCard = ({
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
       }`}
     >
+      <div className="relative">
+        {/* Imagem de capa no topo do card */}
+        <div className="w-full h-12 bg-vecinos-blue flex items-center justify-center">
+          <span className="text-white font-medium text-sm">Comunicação Visual</span>
+        </div>
+      </div>
       <div className="relative aspect-video overflow-hidden">
         <div className={`w-full h-full ${!imageLoaded ? 'image-loading' : ''}`}>
           <img
-            src={imageUrl}
+            src={getCoverImage()}
             alt={title}
             className={`w-full h-full object-cover transition-all duration-700 ${
               imageLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-110'
