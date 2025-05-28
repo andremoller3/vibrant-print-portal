@@ -81,16 +81,11 @@ const Navbar = () => {
           
           {/* Services Dropdown */}
           <DropdownMenu>
-            <DropdownMenuTrigger className={`nav-link flex items-center ${isActive('/servicos') || location.pathname.startsWith('/servicos/') ? 'text-vecinos-primary active-nav-link' : ''}`}>
+            <DropdownMenuTrigger className={`nav-link flex items-center ${location.pathname.startsWith('/servicos/') ? 'text-vecinos-primary active-nav-link' : ''}`}>
               Serviços
               <ChevronDown className="ml-1 h-4 w-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent className="bg-white shadow-lg border rounded-md p-1 min-w-[250px] z-50">
-              <DropdownMenuItem asChild>
-                <Link to="/servicos" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vecinos-primary rounded-sm">
-                  Ver Todos os Serviços
-                </Link>
-              </DropdownMenuItem>
               {services.map((service) => (
                 <DropdownMenuItem key={service.path} asChild>
                   <Link to={service.path} className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vecinos-primary rounded-sm">
@@ -140,7 +135,7 @@ const Navbar = () => {
             
             {/* Mobile Services Section */}
             <div>
-              <Link to="/servicos" onClick={closeMenu} className={`text-xl font-medium block mb-3 ${isActive('/servicos') ? 'text-vecinos-primary' : 'text-vecinos-dark'}`}>Serviços</Link>
+              <span className="text-xl font-medium block mb-3 text-vecinos-dark">Serviços</span>
               <div className="ml-4 space-y-3">
                 {services.map((service) => (
                   <Link 
