@@ -7,7 +7,6 @@ import Footer from '@/components/Footer';
 const About = () => {
   const historyRef = useRef<HTMLDivElement>(null);
   const valuesRef = useRef<HTMLDivElement>(null);
-  const teamRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
     const observerOptions = {
@@ -26,7 +25,7 @@ const About = () => {
 
     const observer = new IntersectionObserver(handleIntersect, observerOptions);
 
-    const sections = [historyRef.current, valuesRef.current, teamRef.current];
+    const sections = [historyRef.current, valuesRef.current];
 
     sections.forEach(section => {
       if (section) {
@@ -130,91 +129,6 @@ const About = () => {
                 <li>• Inovação contínua</li>
                 <li>• Responsabilidade socioambiental</li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section ref={teamRef} className="py-20 px-4">
-        <div className="container mx-auto">
-          <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
-            <span className="text-vecinos-orange font-semibold">Nossa Equipe</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-vecinos-blue mt-2 mb-4">
-              Profissionais Apaixonados pelo que Fazem
-            </h2>
-            <p className="text-gray-600">
-              Conheça os talentos por trás da Vecinos Comunicação Visual, uma equipe comprometida com a excelência em cada projeto.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="animate-on-scroll">
-              <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                  alt="Carlos Silva" 
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-vecinos-blue">Carlos Silva</h3>
-                  <p className="text-vecinos-orange mb-4">Fundador & Diretor</p>
-                  <p className="text-gray-600">
-                    Com mais de 15 anos de experiência no setor de comunicação visual.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="animate-on-scroll animate-delay-200">
-              <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                  alt="Ana Oliveira" 
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-vecinos-blue">Ana Oliveira</h3>
-                  <p className="text-vecinos-orange mb-4">Gerente de Produção</p>
-                  <p className="text-gray-600">
-                    Especialista em processos de impressão digital e acabamentos.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="animate-on-scroll animate-delay-400">
-              <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?q=80&w=864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                  alt="Marcos Santos" 
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-vecinos-blue">Marcos Santos</h3>
-                  <p className="text-vecinos-orange mb-4">Designer Gráfico</p>
-                  <p className="text-gray-600">
-                    Criativo com foco em design de comunicação visual para empresas.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="animate-on-scroll animate-delay-600">
-              <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                  alt="Juliana Costa" 
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-vecinos-blue">Juliana Costa</h3>
-                  <p className="text-vecinos-orange mb-4">Atendimento ao Cliente</p>
-                  <p className="text-gray-600">
-                    Especialista em relacionamento e satisfação do cliente.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
