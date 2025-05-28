@@ -123,14 +123,14 @@ const Index = () => {
             <ServiceCard 
               title="Banners, Faixas e Fachadas"
               description="Impressão em lona de alta definição com acabamento em madeiras ou ilhós."
-              imageUrl="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true"
+              imageUrl=""
               link="/servicos"
               delay={100}
             />
             <ServiceCard 
               title="Adesivos, Rótulos"
               description="Vinil branco, transparente, perfurado ou recorte, com acabamento brilho ou fosco."
-              imageUrl="https://github.com/andremoller3/videos/blob/main/adesivos.jpg?raw=true"
+              imageUrl=""
               link="/servicos"
               delay={300}
             />
