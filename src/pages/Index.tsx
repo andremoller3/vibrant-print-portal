@@ -123,21 +123,21 @@ const Index = () => {
             <ServiceCard 
               title="Banners, Faixas e Fachadas"
               description="Impressão em lona de alta definição com acabamento em madeiras ou ilhós."
-              imageUrl="https://images.unsplash.com/photo-1588412079929-791b400dbd85?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              imageUrl="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true"
               link="/servicos"
               delay={100}
             />
             <ServiceCard 
-              title="Adesivos, Rótulos e Placas"
+              title="Adesivos, Rótulos"
               description="Vinil branco, transparente, perfurado ou recorte, com acabamento brilho ou fosco."
-              imageUrl="https://images.unsplash.com/photo-1600003263592-b42a89535fa8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              imageUrl="https://github.com/andremoller3/videos/blob/main/adesivos.jpg?raw=true"
               link="/servicos"
               delay={300}
             />
             <ServiceCard 
               title="Envelopamento de Veículos"
               description="Adesivação personalizada com impressão digital ou vinil recorte."
-              imageUrl="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              imageUrl="https://github.com/andremoller3/videos/blob/main/96b9141a-f77f-4bcf-8428-5d3073319377.png?raw=true"
               link="/servicos"
               delay={500}
             />

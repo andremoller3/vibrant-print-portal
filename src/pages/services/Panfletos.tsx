@@ -46,7 +46,7 @@ const Panfletos = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2071&auto=format&fit=crop"
+                src="https://github.com/andremoller3/videos/blob/main/panfletos.jpg?raw=true"
                 alt="Panfletos e materiais promocionais"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />

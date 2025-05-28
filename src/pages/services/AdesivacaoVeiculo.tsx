@@ -23,7 +23,7 @@ const AdesivacaoVeiculo = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Adesivação de Veículos em Caraguatatuba
+                Adesivação de Veículos no Litoral Norte
               </h1>
               <p className="text-xl mb-8 text-blue-100">
                 Transforme seu veículo em uma ferramenta de marketing eficaz com nossa adesivação profissional. 

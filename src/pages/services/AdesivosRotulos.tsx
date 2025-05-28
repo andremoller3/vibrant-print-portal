@@ -46,7 +46,7 @@ const AdesivosRotulos = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1600003263592-b42a89535fa8?q=80&w=1170&auto=format&fit=crop"
+                src="https://github.com/andremoller3/videos/blob/main/adesivos.jpg?raw=true"
                 alt="Adesivos e rótulos personalizados"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
