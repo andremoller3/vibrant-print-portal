@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, MessageCircle } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -102,9 +102,10 @@ const Navbar = () => {
             href="https://wa.me/5512979790618" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="btn btn-primary ml-4"
+            className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full flex items-center gap-2 ml-4 transition-colors duration-300 font-medium"
           >
-            Solicite um Orçamento
+            <MessageCircle size={18} />
+            Pedir Orçamento
           </a>
         </nav>
 
@@ -156,9 +157,10 @@ const Navbar = () => {
               href="https://wa.me/5512979790618" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn btn-primary inline-block mt-6 text-center"
+              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full flex items-center gap-2 mt-6 transition-colors duration-300 font-medium w-fit"
             >
-              Solicite um Orçamento
+              <MessageCircle size={18} />
+              Pedir Orçamento
             </a>
           </nav>
         </div>

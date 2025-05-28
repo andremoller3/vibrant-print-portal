@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -57,7 +57,7 @@ const Footer = () => {
                 <Link to="/sobre" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Sobre Nós</Link>
               </li>
               <li>
-                <Link to="/servicos" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Serviços</Link>
+                <Link to="/servicos/banners-faixas-fachadas" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Serviços</Link>
               </li>
               <li>
                 <Link to="/contato" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Contato</Link>
@@ -73,19 +73,19 @@ const Footer = () => {
             <h4 className="text-lg font-montserrat font-bold mb-6 text-white">Nossos Serviços</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/servicos" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Banners e Faixas</Link>
+                <Link to="/servicos/banners-faixas-fachadas" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Banners e Faixas</Link>
               </li>
               <li>
-                <Link to="/servicos" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Adesivos e Rótulos</Link>
+                <Link to="/servicos/adesivos-rotulos" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Adesivos e Rótulos</Link>
               </li>
               <li>
-                <Link to="/servicos" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Placas e Fachadas</Link>
+                <Link to="/servicos/banners-faixas-fachadas" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Placas e Fachadas</Link>
               </li>
               <li>
-                <Link to="/servicos" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Envelopamento de Veículos</Link>
+                <Link to="/servicos/adesivacao-veiculo" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Envelopamento de Veículos</Link>
               </li>
               <li>
-                <Link to="/servicos" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Impressão Digital</Link>
+                <Link to="/servicos/panfletos" className="text-gray-300 hover:text-vecinos-orange transition-colors duration-300">Impressão Digital</Link>
               </li>
             </ul>
           </div>
@@ -125,9 +125,10 @@ const Footer = () => {
                 href="https://wa.me/5512979790618" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="btn btn-primary text-sm"
+                className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full flex items-center gap-2 transition-colors duration-300 font-medium"
               >
-                Solicite um Orçamento
+                <MessageCircle size={18} />
+                Pedir Orçamento
               </a>
             </div>
           </div>

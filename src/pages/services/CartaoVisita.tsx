@@ -1,5 +1,5 @@
 
-import { ArrowRight, Check, Phone } from 'lucide-react';
+import { ArrowRight, Check, MessageCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
@@ -34,10 +34,10 @@ const CartaoVisita = () => {
                   href="https://wa.me/5512979790618" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="btn bg-vecinos-orange text-white hover:bg-opacity-90 inline-flex items-center justify-center"
+                  className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full flex items-center gap-2 transition-colors duration-300 font-medium justify-center"
                 >
-                  <Phone size={18} className="mr-2" />
-                  Solicitar Orçamento
+                  <MessageCircle size={18} />
+                  Pedir Orçamento
                 </a>
                 <Link to="/contato" className="btn bg-transparent border-2 border-white text-white hover:bg-white hover:bg-opacity-10">
                   Fale Conosco
@@ -83,10 +83,10 @@ const CartaoVisita = () => {
                 href="https://wa.me/5512979790618" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="btn btn-primary inline-flex items-center"
+                className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full inline-flex items-center gap-2 transition-colors duration-300 font-medium"
               >
-                Solicitar Orçamento Agora
-                <ArrowRight size={18} className="ml-2" />
+                <MessageCircle size={18} />
+                Pedir Orçamento Agora
               </a>
             </div>
             
@@ -124,9 +124,10 @@ const CartaoVisita = () => {
             href="https://wa.me/5512979790618" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="btn bg-vecinos-orange text-white hover:bg-opacity-90 text-lg px-8 py-3"
+            className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full inline-flex items-center gap-2 transition-colors duration-300 font-medium text-lg"
           >
-            Solicitar Orçamento via WhatsApp
+            <MessageCircle size={20} />
+            Pedir Orçamento via WhatsApp
           </a>
         </div>
       </section>
