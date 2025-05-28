@@ -1,7 +1,13 @@
 
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,6 +49,18 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  const services = [
+    { name: 'Banners, Faixas e Fachadas', path: '/servicos/banners-faixas-fachadas' },
+    { name: 'Adesivos e Rótulos', path: '/servicos/adesivos-rotulos' },
+    { name: 'Adesivação de Veículo', path: '/servicos/adesivacao-veiculo' },
+    { name: 'Cartão de Visita', path: '/servicos/cartao-visita' },
+    { name: 'Panfletos', path: '/servicos/panfletos' },
+    { name: 'Wind Banners', path: '/servicos/wind-banners' },
+    { name: 'Placa de PVC', path: '/servicos/placa-pvc' },
+    { name: 'Cardápios', path: '/servicos/cardapios' },
+    { name: 'Camisetas Personalizadas', path: '/servicos/camisetas-personalizadas' },
+  ];
+
   return (
     <header className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -60,7 +78,29 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-1">
           <Link to="/" className={`nav-link ${isActive('/') ? 'text-vecinos-primary active-nav-link' : ''}`}>Home</Link>
           <Link to="/sobre" className={`nav-link ${isActive('/sobre') ? 'text-vecinos-primary active-nav-link' : ''}`}>Sobre Nós</Link>
-          <Link to="/servicos" className={`nav-link ${isActive('/servicos') ? 'text-vecinos-primary active-nav-link' : ''}`}>Serviços</Link>
+          
+          {/* Services Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger className={`nav-link flex items-center ${isActive('/servicos') || location.pathname.startsWith('/servicos/') ? 'text-vecinos-primary active-nav-link' : ''}`}>
+              Serviços
+              <ChevronDown className="ml-1 h-4 w-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="bg-white shadow-lg border rounded-md p-1 min-w-[250px] z-50">
+              <DropdownMenuItem asChild>
+                <Link to="/servicos" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vecinos-primary rounded-sm">
+                  Ver Todos os Serviços
+                </Link>
+              </DropdownMenuItem>
+              {services.map((service) => (
+                <DropdownMenuItem key={service.path} asChild>
+                  <Link to={service.path} className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vecinos-primary rounded-sm">
+                    {service.name}
+                  </Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+
           <Link to="/contato" className={`nav-link ${isActive('/contato') ? 'text-vecinos-primary active-nav-link' : ''}`}>Contato</Link>
           <Link to="/blog" className={`nav-link ${isActive('/blog') ? 'text-vecinos-primary active-nav-link' : ''}`}>Blog</Link>
           <a 
@@ -97,7 +137,24 @@ const Navbar = () => {
           <nav className="flex flex-col space-y-6">
             <Link to="/" onClick={closeMenu} className={`text-xl font-medium ${isActive('/') ? 'text-vecinos-primary' : 'text-vecinos-dark'}`}>Home</Link>
             <Link to="/sobre" onClick={closeMenu} className={`text-xl font-medium ${isActive('/sobre') ? 'text-vecinos-primary' : 'text-vecinos-dark'}`}>Sobre Nós</Link>
-            <Link to="/servicos" onClick={closeMenu} className={`text-xl font-medium ${isActive('/servicos') ? 'text-vecinos-primary' : 'text-vecinos-dark'}`}>Serviços</Link>
+            
+            {/* Mobile Services Section */}
+            <div>
+              <Link to="/servicos" onClick={closeMenu} className={`text-xl font-medium block mb-3 ${isActive('/servicos') ? 'text-vecinos-primary' : 'text-vecinos-dark'}`}>Serviços</Link>
+              <div className="ml-4 space-y-3">
+                {services.map((service) => (
+                  <Link 
+                    key={service.path}
+                    to={service.path} 
+                    onClick={closeMenu} 
+                    className={`text-lg font-medium block ${isActive(service.path) ? 'text-vecinos-primary' : 'text-gray-600'}`}
+                  >
+                    {service.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            
             <Link to="/contato" onClick={closeMenu} className={`text-xl font-medium ${isActive('/contato') ? 'text-vecinos-primary' : 'text-vecinos-dark'}`}>Contato</Link>
             <Link to="/blog" onClick={closeMenu} className={`text-xl font-medium ${isActive('/blog') ? 'text-vecinos-primary' : 'text-vecinos-dark'}`}>Blog</Link>
             <a 
