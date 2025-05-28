@@ -10,6 +10,16 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
+// Service pages
+import BannersFaixasFachadas from "./pages/services/BannersFaixasFachadas";
+import AdesivosRotulos from "./pages/services/AdesivosRotulos";
+import AdesivacaoVeiculo from "./pages/services/AdesivacaoVeiculo";
+import CartaoVisita from "./pages/services/CartaoVisita";
+import Panfletos from "./pages/services/Panfletos";
+import WindBanners from "./pages/services/WindBanners";
+import PlacaPVC from "./pages/services/PlacaPVC";
+import Cardapios from "./pages/services/Cardapios";
+import CamisetasPersonalizadas from "./pages/services/CamisetasPersonalizadas";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +35,16 @@ const App = () => (
           <Route path="/servicos" element={<Services />} />
           <Route path="/contato" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
+          {/* Service individual pages */}
+          <Route path="/servicos/banners-faixas-fachadas" element={<BannersFaixasFachadas />} />
+          <Route path="/servicos/adesivos-rotulos" element={<AdesivosRotulos />} />
+          <Route path="/servicos/adesivacao-veiculo" element={<AdesivacaoVeiculo />} />
+          <Route path="/servicos/cartao-visita" element={<CartaoVisita />} />
+          <Route path="/servicos/panfletos" element={<Panfletos />} />
+          <Route path="/servicos/wind-banners" element={<WindBanners />} />
+          <Route path="/servicos/placa-pvc" element={<PlacaPVC />} />
+          <Route path="/servicos/cardapios" element={<Cardapios />} />
+          <Route path="/servicos/camisetas-personalizadas" element={<CamisetasPersonalizadas />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

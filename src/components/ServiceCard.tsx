@@ -55,6 +55,30 @@ const ServiceCard = ({
     setImageLoaded(true);
   };
 
+  // Function to get specific service page link
+  const getServiceLink = () => {
+    if (title.includes("Banners") || title.includes("Faixas") || title.includes("Fachadas")) {
+      return "/servicos/banners-faixas-fachadas";
+    } else if (title.includes("Adesivos") || title.includes("Rótulos")) {
+      return "/servicos/adesivos-rotulos";
+    } else if (title.includes("Envelopamento") || title.includes("Veículos")) {
+      return "/servicos/adesivacao-veiculo";
+    } else if (title.includes("Cartão") || title.includes("Visita")) {
+      return "/servicos/cartao-visita";
+    } else if (title.includes("Panfletos")) {
+      return "/servicos/panfletos";
+    } else if (title.includes("Wind") || title.includes("Banner")) {
+      return "/servicos/wind-banners";
+    } else if (title.includes("Placa") && title.includes("PVC")) {
+      return "/servicos/placa-pvc";
+    } else if (title.includes("Cardápio")) {
+      return "/servicos/cardapios";
+    } else if (title.includes("Camiseta")) {
+      return "/servicos/camisetas-personalizadas";
+    }
+    return link; // fallback to original link
+  };
+
   // Adicionando imagem de capa com base no título do serviço
   const getCoverImage = () => {
     if (title.includes("Banners") || title.includes("Faixas") || title.includes("Fachadas")) {
@@ -95,7 +119,7 @@ const ServiceCard = ({
         <h3 className="text-xl font-semibold text-vecinos-blue mb-3">{title}</h3>
         <p className="text-gray-600 mb-4">{description}</p>
         <Link
-          to={link}
+          to={getServiceLink()}
           className="inline-flex items-center text-vecinos-orange font-medium hover:underline transition-all duration-300 group"
         >
           Ver mais{' '}
