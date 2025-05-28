@@ -46,7 +46,7 @@ const CartaoVisita = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1616078115392-a9b4a16d53e3?q=80&w=1087&auto=format&fit=crop"
+                src="https://github.com/andremoller3/videos/blob/main/cartao.jpg?raw=true"
                 alt="Cartões de visita profissionais"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />

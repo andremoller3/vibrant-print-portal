@@ -46,7 +46,7 @@ const WindBanners = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=2071&auto=format&fit=crop"
+                src="https://github.com/andremoller3/videos/blob/main/wind.jpg?raw=true"
                 alt="Wind banners para eventos"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
