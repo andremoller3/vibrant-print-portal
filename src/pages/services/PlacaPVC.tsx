@@ -18,7 +18,6 @@ const PlacaPVC = () => {
     <>
       <Navbar />
       
-      {/* Hero Section */}
       <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-blue to-blue-600">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -56,7 +55,6 @@ const PlacaPVC = () => {
         </div>
       </div>
 
-      {/* Service Details */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -111,9 +109,8 @@ const PlacaPVC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* CTA Section */}
       <section className="py-16 px-4 bg-vecinos-blue">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
