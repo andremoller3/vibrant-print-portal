@@ -46,7 +46,7 @@ const PlacaPVC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1563694983011-6f4d90358083?q=80&w=987&auto=format&fit=crop"
+                src="https://github.com/andremoller3/videos/blob/main/pvc.jpg?raw=true"
                 alt="Placas de PVC para sinalização"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />

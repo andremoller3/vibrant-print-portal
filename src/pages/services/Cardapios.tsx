@@ -46,7 +46,7 @@ const Cardapios = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1466669822474-4eea4f4d1b1a?q=80&w=1170&auto=format&fit=crop"
+                src="https://github.com/andremoller3/videos/blob/main/cardapio.jpg?raw=true"
                 alt="Cardápios para restaurantes"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />

@@ -46,7 +46,7 @@ const CamisetasPersonalizadas = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1080&auto=format&fit=crop"
+                src="https://github.com/andremoller3/videos/blob/main/camisa.jpg?raw=true"
                 alt="Camisetas personalizadas"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
