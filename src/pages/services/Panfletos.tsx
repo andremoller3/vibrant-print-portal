@@ -48,7 +48,7 @@ const Panfletos = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://github.com/andremoller3/videos/blob/main/panfletos.jpg?raw=true"
+                src="https://github.com/andremoller3/videos/blob/main/flyer.jpg?raw=true"
                 alt="Panfletos e materiais promocionais"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
