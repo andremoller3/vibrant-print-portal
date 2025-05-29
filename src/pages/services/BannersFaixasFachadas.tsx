@@ -42,9 +42,6 @@ const BannersFaixasFachadas = () => {
                   <MessageCircle size={18} />
                   Solicitar Orçamento
                 </a>
-                <Link to="/contato" className="btn bg-transparent border-2 border-white text-white hover:bg-white hover:bg-opacity-10">
-                  Fale Conosco
-                </Link>
               </div>
             </div>
             <div className="relative">
