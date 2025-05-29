@@ -6,19 +6,16 @@ import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
-
 const Index = () => {
   const aboutSectionRef = useRef<HTMLDivElement>(null);
   const serviceSectionRef = useRef<HTMLDivElement>(null);
   const whySectionRef = useRef<HTMLDivElement>(null);
   const testimonialSectionRef = useRef<HTMLDivElement>(null);
-  
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -10% 0px'
     };
-
     const handleIntersect = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -27,40 +24,22 @@ const Index = () => {
         }
       });
     };
-
     const observer = new IntersectionObserver(handleIntersect, observerOptions);
-
-    const sections = [
-      aboutSectionRef.current,
-      serviceSectionRef.current,
-      whySectionRef.current,
-      testimonialSectionRef.current
-    ];
-
+    const sections = [aboutSectionRef.current, serviceSectionRef.current, whySectionRef.current, testimonialSectionRef.current];
     sections.forEach(section => {
       if (section) {
         const animateElements = section.querySelectorAll('.animate-on-scroll');
         animateElements.forEach(el => observer.observe(el));
       }
     });
-
     return () => observer.disconnect();
   }, []);
-
   const heroImageUrl = "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2071&auto=format&fit=crop";
-
-  return (
-    <>
+  return <>
       <Navbar />
       
       {/* Hero Section */}
-      <Hero 
-        title="Gráfica em Caraguatatuba: Banners, Adesivos e Impressão Digital"
-        subtitle="Transforme sua ideia em realidade com impressões de alta qualidade e cores vivas!"
-        buttonText="Entre em Contato Agora"
-        buttonLink="https://wa.me/5512979790618"
-        imageUrl={heroImageUrl}
-      />
+      <Hero title="Gráfica em Caraguatatuba: Banners, Adesivos e Impressão Digital" subtitle="Transforme sua ideia em realidade com impressões de alta qualidade e cores vivas!" buttonText="Entre em Contato Agora" buttonLink="https://wa.me/5512979790618" imageUrl={heroImageUrl} />
 
       {/* About Section */}
       <section ref={aboutSectionRef} className="py-20 px-4">
@@ -86,11 +65,7 @@ const Index = () => {
             </div>
             <div className="animate-on-scroll animate-delay-200">
               <div className="relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                  alt="Equipe da Vecinos Comunicação Visual" 
-                  className="w-full h-auto rounded-lg shadow-xl"
-                />
+                <img src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Equipe da Vecinos Comunicação Visual" className="w-full h-auto rounded-lg shadow-xl" />
                 <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg md:max-w-xs">
                   <div className="flex items-center text-vecinos-blue font-bold text-xl">
                     <Award className="mr-2 text-vecinos-orange" size={24} />
@@ -120,27 +95,9 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ServiceCard 
-              title="Banners, Faixas e Fachadas"
-              description="Impressão em lona de alta definição com acabamento em madeiras ou ilhós."
-              imageUrl=""
-              link="/servicos"
-              delay={100}
-            />
-            <ServiceCard 
-              title="Adesivos, Rótulos"
-              description="Vinil branco, transparente, perfurado ou recorte, com acabamento brilho ou fosco."
-              imageUrl=""
-              link="/servicos"
-              delay={300}
-            />
-            <ServiceCard 
-              title="Envelopamento de Veículos"
-              description="Adesivação personalizada com impressão digital ou vinil recorte."
-              imageUrl="https://github.com/andremoller3/videos/blob/main/96b9141a-f77f-4bcf-8428-5d3073319377.png?raw=true"
-              link="/servicos"
-              delay={500}
-            />
+            <ServiceCard title="Banners, Faixas e Fachadas" description="Impressão em lona de alta definição com acabamento em madeiras ou ilhós." imageUrl="" link="/servicos" delay={100} />
+            <ServiceCard title="Adesivos, Rótulos" description="Vinil branco, transparente, perfurado ou recorte, com acabamento brilho ou fosco." imageUrl="" link="/servicos" delay={300} />
+            <ServiceCard title="Envelopamento de Veículos" description="Adesivação personalizada com impressão digital ou vinil recorte." imageUrl="https://github.com/andremoller3/videos/blob/main/96b9141a-f77f-4bcf-8428-5d3073319377.png?raw=true" link="/servicos" delay={500} />
           </div>
 
           <div className="text-center mt-12 animate-on-scroll animate-delay-400">
@@ -215,35 +172,13 @@ const Index = () => {
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 0 10 L 40 10 M 10 0 L 10 40" fill="none" stroke="white" strokeWidth="1"/>
+                <path d="M 0 10 L 40 10 M 10 0 L 10 40" fill="none" stroke="white" strokeWidth="1" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#grid)" />
           </svg>
         </div>
-        <div className="container mx-auto relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 animate-on-scroll">
-              Pronto para Transformar Suas Ideias em Realidade?
-            </h2>
-            <p className="text-blue-100 mb-8 text-lg animate-on-scroll animate-delay-200">
-              Entre em contato hoje mesmo e descubra como podemos ajudar seu negócio a se destacar com nossa comunicação visual de alta qualidade.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4 animate-on-scroll animate-delay-400">
-              <a 
-                href="https://wa.me/5512979790618" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="btn bg-vecinos-orange text-white hover:bg-opacity-90"
-              >
-                Solicite um Orçamento
-              </a>
-              <Link to="/contato" className="btn bg-transparent border-2 border-white text-white hover:bg-white hover:bg-opacity-10">
-                Entre em Contato
-              </Link>
-            </div>
-          </div>
-        </div>
+        
       </section>
 
       {/* Testimonials Section */}
@@ -260,35 +195,15 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <TestimonialCard 
-              name="João Silva"
-              location="Caraguatatuba"
-              content="A Vecinos Comunicação Visual fez um banner incrível para o meu negócio! As cores são vivas e a entrega foi super rápida. Recomendo!"
-              rating={5}
-              delay={100}
-            />
-            <TestimonialCard 
-              name="Maria Rodrigues"
-              location="Ubatuba"
-              content="Melhor gráfica em Caraguatatuba! Adesivos de alta qualidade e atendimento excelente. Certamente voltarei a fazer negócios."
-              rating={5}
-              delay={300}
-            />
-            <TestimonialCard 
-              name="Pedro Alves"
-              location="São Sebastião"
-              content="Enveloparam meu veículo comercial e ficou simplesmente perfeito! Ótimo acabamento, preço justo e prazo cumprido. Satisfação total!"
-              rating={5}
-              delay={500}
-            />
+            <TestimonialCard name="João Silva" location="Caraguatatuba" content="A Vecinos Comunicação Visual fez um banner incrível para o meu negócio! As cores são vivas e a entrega foi super rápida. Recomendo!" rating={5} delay={100} />
+            <TestimonialCard name="Maria Rodrigues" location="Ubatuba" content="Melhor gráfica em Caraguatatuba! Adesivos de alta qualidade e atendimento excelente. Certamente voltarei a fazer negócios." rating={5} delay={300} />
+            <TestimonialCard name="Pedro Alves" location="São Sebastião" content="Enveloparam meu veículo comercial e ficou simplesmente perfeito! Ótimo acabamento, preço justo e prazo cumprido. Satisfação total!" rating={5} delay={500} />
           </div>
         </div>
       </section>
 
       {/* Footer */}
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default Index;
