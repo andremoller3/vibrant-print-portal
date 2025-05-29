@@ -7,15 +7,12 @@ import TestimonialCard from '@/components/TestimonialCard';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import useScrollToTop from '@/hooks/useScrollToTop';
-
 const Index = () => {
   useScrollToTop();
-  
   const aboutSectionRef = useRef<HTMLDivElement>(null);
   const serviceSectionRef = useRef<HTMLDivElement>(null);
   const whySectionRef = useRef<HTMLDivElement>(null);
   const testimonialSectionRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -39,9 +36,7 @@ const Index = () => {
     });
     return () => observer.disconnect();
   }, []);
-
   const heroImageUrl = "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2071&auto=format&fit=crop";
-
   return <>
       <Navbar />
       
@@ -78,9 +73,7 @@ const Index = () => {
                     <Award className="mr-2 text-vecinos-orange" size={24} />
                     <span>Reconhecidos pela qualidade</span>
                   </div>
-                  <p className="text-gray-600 mt-2">
-                    4.9/5 ⭐ com mais de 100 avaliações no Google
-                  </p>
+                  <p className="text-gray-600 mt-2">4.9/5 ⭐ de avaliações no Google</p>
                 </div>
               </div>
             </div>
@@ -213,5 +206,4 @@ const Index = () => {
       <Footer />
     </>;
 };
-
 export default Index;
