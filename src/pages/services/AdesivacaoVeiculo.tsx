@@ -90,22 +90,15 @@ const AdesivacaoVeiculo = () => {
               </a>
             </div>
             
-            <div className="space-y-6">
-              <img 
-                src="/lovable-uploads/3fe7386f-38dc-41d5-ae55-ccd3b021d4e6.png"
-                alt="Veículo com adesivação personalizada"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h4 className="font-semibold text-vecinos-blue mb-3">Tipos de Adesivação:</h4>
-                <ul className="text-gray-600 space-y-2">
-                  <li>• Adesivação total (envelopamento completo)</li>
-                  <li>• Adesivação parcial</li>
-                  <li>• Lettering e logotipos</li>
-                  <li>• Faixas decorativas</li>
-                  <li>• Identificação de frotas</li>
-                </ul>
-              </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h4 className="font-semibold text-vecinos-blue mb-3">Tipos de Adesivação:</h4>
+              <ul className="text-gray-600 space-y-2">
+                <li>• Adesivação total (envelopamento completo)</li>
+                <li>• Adesivação parcial</li>
+                <li>• Lettering e logotipos</li>
+                <li>• Faixas decorativas</li>
+                <li>• Identificação de frotas</li>
+              </ul>
             </div>
           </div>
         </div>

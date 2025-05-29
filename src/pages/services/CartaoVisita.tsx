@@ -90,22 +90,15 @@ const CartaoVisita = () => {
               </a>
             </div>
             
-            <div className="space-y-6">
-              <img 
-                src="/lovable-uploads/3fe7386f-38dc-41d5-ae55-ccd3b021d4e6.png"
-                alt="Modelos de cartões de visita"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h4 className="font-semibold text-vecinos-blue mb-3">Opções Disponíveis:</h4>
-                <ul className="text-gray-600 space-y-2">
-                  <li>• Papel couché 250g ou 300g</li>
-                  <li>• Acabamento fosco ou brilho</li>
-                  <li>• Laminação plastificada</li>
-                  <li>• Verniz localizado</li>
-                  <li>• Design personalizado incluído</li>
-                </ul>
-              </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h4 className="font-semibold text-vecinos-blue mb-3">Opções Disponíveis:</h4>
+              <ul className="text-gray-600 space-y-2">
+                <li>• Papel couché 250g ou 300g</li>
+                <li>• Acabamento fosco ou brilho</li>
+                <li>• Laminação plastificada</li>
+                <li>• Verniz localizado</li>
+                <li>• Design personalizado incluído</li>
+              </ul>
             </div>
           </div>
         </div>

@@ -90,22 +90,15 @@ const PlacaPVC = () => {
               </a>
             </div>
             
-            <div className="space-y-6">
-              <img 
-                src="/lovable-uploads/3fe7386f-38dc-41d5-ae55-ccd3b021d4e6.png"
-                alt="Placa de PVC personalizada"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h4 className="font-semibold text-vecinos-blue mb-3">Aplicações:</h4>
-                <ul className="text-gray-600 space-y-2">
-                  <li>• Placas de identificação</li>
-                  <li>• Sinalização de segurança</li>
-                  <li>• Placas imobiliárias</li>
-                  <li>• Comunicação visual empresarial</li>
-                  <li>• Placas informativas</li>
-                </ul>
-              </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h4 className="font-semibold text-vecinos-blue mb-3">Aplicações:</h4>
+              <ul className="text-gray-600 space-y-2">
+                <li>• Placas de identificação</li>
+                <li>• Sinalização de segurança</li>
+                <li>• Placas imobiliárias</li>
+                <li>• Comunicação visual empresarial</li>
+                <li>• Placas informativas</li>
+              </ul>
             </div>
           </div>
         </div>
