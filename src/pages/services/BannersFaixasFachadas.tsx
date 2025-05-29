@@ -8,8 +8,8 @@ const BannersFaixasFachadas = () => {
   useScrollToTop();
   
   const benefits = [
-    "Impressão em alta resolução até 1440 dpi",
-    "Materiais resistentes a intempéries",
+    "Impressão em alta resolução",
+    "Materiais resistentes",
     "Acabamento em madeiras ou ilhós",
     "Tamanhos personalizados conforme necessidade",
     "Cores vivas e duradouras",
@@ -100,7 +100,6 @@ const BannersFaixasFachadas = () => {
                 <li>• Acabamento com ilhós (mais comum)</li>
                 <li>• Acabamento com madeiras</li>
                 <li>• Bainha para encaixe em suporte</li>
-                <li>• Soldas laterais reforçadas</li>
               </ul>
             </div>
           </div>
