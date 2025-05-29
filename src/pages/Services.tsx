@@ -70,14 +70,14 @@ const Services = () => {
             <ServiceCard 
               title="Banners, Faixas e Fachadas" 
               description="Impressão em lona de alta definição com acabamento em madeiras ou ilhós para fachadas comerciais e eventos." 
-              imageUrl="" 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true" 
               link="/servicos/banners-faixas-fachadas" 
               delay={100} 
             />
             <ServiceCard 
               title="Adesivos e Rótulos" 
               description="Vinil branco, transparente, perfurado ou recorte, com acabamento brilho ou fosco para diversas aplicações." 
-              imageUrl="" 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/adesivos.jpg?raw=true" 
               link="/servicos/adesivos-rotulos" 
               delay={200} 
             />
