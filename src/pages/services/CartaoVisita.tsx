@@ -1,10 +1,12 @@
-
 import { ArrowRight, Check, MessageCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
+import useScrollToTop from '@/hooks/useScrollToTop';
 
 const CartaoVisita = () => {
+  useScrollToTop();
+  
   const benefits = [
     "Impressão em papel couché de alta qualidade",
     "Acabamento fosco ou brilho",

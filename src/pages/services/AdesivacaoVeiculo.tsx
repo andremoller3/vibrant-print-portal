@@ -1,10 +1,12 @@
-
 import { ArrowRight, Check, MessageCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
+import useScrollToTop from '@/hooks/useScrollToTop';
 
 const AdesivacaoVeiculo = () => {
+  useScrollToTop();
+  
   const benefits = [
     "Vinil automotivo de alta qualidade",
     "Proteção UV para maior durabilidade",

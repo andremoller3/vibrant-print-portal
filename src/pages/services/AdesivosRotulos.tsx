@@ -1,10 +1,12 @@
-
 import { ArrowRight, Check, MessageCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
+import useScrollToTop from '@/hooks/useScrollToTop';
 
 const AdesivosRotulos = () => {
+  useScrollToTop();
+  
   const benefits = [
     "Vinil branco, transparente ou colorido",
     "Acabamento brilho ou fosco",

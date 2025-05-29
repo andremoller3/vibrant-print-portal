@@ -1,10 +1,12 @@
-
 import { ArrowRight, Check, MessageCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
+import useScrollToTop from '@/hooks/useScrollToTop';
 
 const PlacaPVC = () => {
+  useScrollToTop();
+  
   const benefits = [
     "Material resistente e durável",
     "Não deforma com umidade",

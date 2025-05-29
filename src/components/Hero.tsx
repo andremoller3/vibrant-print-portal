@@ -1,5 +1,6 @@
 
 import { useEffect, useRef } from 'react';
+import { MessageCircle } from 'lucide-react';
 
 interface HeroProps {
   title: string;
@@ -58,9 +59,10 @@ const Hero = ({ title, subtitle, buttonText, buttonLink, imageUrl }: HeroProps) 
             href={buttonLink} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="btn btn-primary text-lg animate-slide-in-top"
+            className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full inline-flex items-center justify-center gap-2 transition-colors duration-300 font-medium text-lg animate-slide-in-top"
             style={{ animationDelay: '0.7s' }}
           >
+            <MessageCircle size={20} />
             {buttonText}
           </a>
         </div>

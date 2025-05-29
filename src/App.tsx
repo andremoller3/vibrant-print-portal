@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
+import Services from "./pages/Services";
 import NotFound from "./pages/NotFound";
 // Service pages
 import BannersFaixasFachadas from "./pages/services/BannersFaixasFachadas";
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/sobre" element={<About />} />
           <Route path="/contato" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/servicos" element={<Services />} />
           {/* Service individual pages */}
           <Route path="/servicos/banners-faixas-fachadas" element={<BannersFaixasFachadas />} />
           <Route path="/servicos/adesivos-rotulos" element={<AdesivosRotulos />} />

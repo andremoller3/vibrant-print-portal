@@ -1,10 +1,12 @@
-
 import { ArrowRight, Check, MessageCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
+import useScrollToTop from '@/hooks/useScrollToTop';
 
 const CamisetasPersonalizadas = () => {
+  useScrollToTop();
+  
   const benefits = [
     "Impressão em silk-screen e transfer",
     "Camisetas de alta qualidade",
