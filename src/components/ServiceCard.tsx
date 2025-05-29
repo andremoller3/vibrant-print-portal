@@ -82,9 +82,9 @@ const ServiceCard = ({
   // Adicionando imagem de capa com base no título do serviço
   const getCoverImage = () => {
     if (title.includes("Banners") || title.includes("Faixas") || title.includes("Fachadas")) {
-      return "/lovable-uploads/3fe7386f-38dc-41d5-ae55-ccd3b021d4e6.png";
-    } else if (title.includes("Adesivos") || title.includes("Rótulos") || title.includes("Placas")) {
-      return "/lovable-uploads/3fe7386f-38dc-41d5-ae55-ccd3b021d4e6.png";
+      return "https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true";
+    } else if (title.includes("Adesivos") || title.includes("Rótulos")) {
+      return "https://github.com/andremoller3/videos/blob/main/adesivos.jpg?raw=true";
     } else {
       return imageUrl;
     }
