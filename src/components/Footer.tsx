@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Instagram, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -17,15 +17,6 @@ const Footer = () => {
             </p>
             <div className="flex space-x-3">
               <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="social-icon"
-                aria-label="Facebook"
-              >
-                <Facebook size={18} />
-              </a>
-              <a 
                 href="https://instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -33,15 +24,6 @@ const Footer = () => {
                 aria-label="Instagram"
               >
                 <Instagram size={18} />
-              </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="social-icon"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={18} />
               </a>
             </div>
           </div>
