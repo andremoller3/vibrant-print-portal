@@ -36,14 +36,11 @@ const AdesivosRotulos = () => {
                   href="https://wa.me/5512979790618" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full flex items-center gap-2 transition-colors duration-300 font-medium justify-center"
+                  className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full flex items-center justify-center gap-2 transition-colors duration-300 font-medium"
                 >
                   <MessageCircle size={18} />
-                  Pedir Orçamento
+                  Solicitar Orçamento
                 </a>
-                <Link to="/contato" className="btn bg-transparent border-2 border-white text-white hover:bg-white hover:bg-opacity-10">
-                  Fale Conosco
-                </Link>
               </div>
             </div>
             <div className="relative">
