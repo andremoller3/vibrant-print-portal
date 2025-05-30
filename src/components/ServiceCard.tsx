@@ -67,7 +67,7 @@ const ServiceCard = ({
       return "/servicos/cartao-visita";
     } else if (title.includes("Panfletos")) {
       return "/servicos/panfletos";
-    } else if (title.includes("Wind") || title.includes("Banner")) {
+    } else if (title.includes("Wind")) {
       return "/servicos/wind-banners";
     } else if (title.includes("Placa") && title.includes("PVC")) {
       return "/servicos/placa-pvc";
@@ -85,6 +85,8 @@ const ServiceCard = ({
       return "https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true";
     } else if (title.includes("Adesivos") || title.includes("Rótulos")) {
       return "https://github.com/andremoller3/videos/blob/main/adesivos.jpg?raw=true";
+    } else if (title.includes("Wind")) {
+      return "https://github.com/andremoller3/videos/blob/main/wind.jpg?raw=true";
     } else {
       return imageUrl;
     }
