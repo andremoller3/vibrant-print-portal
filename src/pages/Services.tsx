@@ -42,10 +42,10 @@ const Services = () => {
       {/* Hero Section */}
       <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-blue to-blue-600">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             Nossos Serviços de Comunicação Visual
           </h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto">
             Oferecemos soluções completas em comunicação visual para empresas e negócios 
             em Caraguatatuba, Ubatuba, São Sebastião e Ilhabela.
           </p>
@@ -57,7 +57,7 @@ const Services = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
             <span className="text-vecinos-orange font-semibold">Serviços Completos</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-vecinos-blue mt-2 mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-vecinos-blue mt-2 mb-4">
               Tudo que Você Precisa em Comunicação Visual
             </h2>
             <p className="text-gray-600">
@@ -137,7 +137,7 @@ const Services = () => {
       {/* CTA Section */}
       <section className="py-16 px-4 bg-vecinos-blue">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
             Precisa de um Orçamento Personalizado?
           </h2>
           <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
@@ -148,7 +148,7 @@ const Services = () => {
             href="https://wa.me/5512979790618" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full flex items-center justify-center gap-2 transition-colors duration-300 font-medium text-lg mx-auto w-fit"
+            className="bg-green-500 hover:bg-green-600 text-white px-6 md:px-8 py-3 rounded-full flex items-center justify-center gap-2 transition-colors duration-300 font-medium text-lg mx-auto w-fit"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12.017 2.011c-5.506 0-9.989 4.484-9.989 9.989 0 1.764.459 3.418 1.264 4.849L2.01 21.99l5.124-1.283a9.956 9.956 0 004.883 1.284c5.506 0 9.989-4.484 9.989-9.989s-4.484-9.99-9.989-9.99zM12.017 18.41a6.396 6.396 0 01-3.257-.895l-.233-.139-2.418.605.648-2.36-.152-.242a6.396 6.396 0 115.412 2.031z"/>

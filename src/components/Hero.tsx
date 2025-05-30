@@ -33,6 +33,7 @@ const Hero = ({ title, subtitle, buttonText, buttonLink, imageUrl }: HeroProps) 
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed"
       style={{ 
         backgroundImage: `url(${imageUrl})`,
+        backgroundAttachment: window.innerWidth > 768 ? 'fixed' : 'scroll'
       }}
     >
       {/* Overlay with improved gradient for better text readability */}
@@ -44,13 +45,13 @@ const Hero = ({ title, subtitle, buttonText, buttonLink, imageUrl }: HeroProps) 
           className="max-w-4xl mx-auto"
         >
           <h1 
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-slide-in-top"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-slide-in-top leading-tight"
             style={{ animationDelay: '0.3s' }}
           >
             {title}
           </h1>
           <p 
-            className="text-xl md:text-2xl text-gray-200 mb-8 animate-slide-in-top"
+            className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 animate-slide-in-top px-4"
             style={{ animationDelay: '0.5s' }}
           >
             {subtitle}
@@ -59,18 +60,18 @@ const Hero = ({ title, subtitle, buttonText, buttonLink, imageUrl }: HeroProps) 
             href={buttonLink} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full inline-flex items-center justify-center gap-2 transition-colors duration-300 font-medium text-lg animate-slide-in-top"
+            className="bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3 rounded-full inline-flex items-center justify-center gap-2 transition-colors duration-300 font-medium text-base sm:text-lg animate-slide-in-top w-auto max-w-xs sm:max-w-none mx-auto"
             style={{ animationDelay: '0.7s' }}
           >
             <MessageCircle size={20} />
-            {buttonText}
+            <span className="text-center">{buttonText}</span>
           </a>
         </div>
       </div>
 
       {/* Decorative elements */}
       <div className="absolute bottom-0 left-0 w-full">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="block">
           <path 
             fill="#ffffff" 
             fillOpacity="1" 

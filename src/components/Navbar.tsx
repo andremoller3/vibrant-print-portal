@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, MessageCircle } from 'lucide-react';
@@ -68,7 +69,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/4f56fc66-5129-4d49-b397-1c14c98dcfcb.png" 
               alt="Vecinos Gráfica Logo" 
-              className="h-14 mr-2" 
+              className="h-12 md:h-14 mr-2" 
             />
           </Link>
         </div>
@@ -96,15 +97,15 @@ const Navbar = () => {
           </DropdownMenu>
 
           <Link to="/contato" className={`nav-link ${isActive('/contato') ? 'text-vecinos-primary active-nav-link' : ''}`}>Contato</Link>
-          <Link to="/blog" className={`nav-link ${isActive('/blog') ? 'text-vecinos-primary active-nav-link' : ''}`}>Blog</Link>
           <a 
             href="https://wa.me/5512979790618" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full flex items-center gap-2 ml-4 transition-colors duration-300 font-medium"
+            className="bg-green-500 hover:bg-green-600 text-white px-3 md:px-4 py-2 rounded-full flex items-center gap-2 ml-4 transition-colors duration-300 font-medium text-sm md:text-base"
           >
             <MessageCircle size={18} />
-            Pedir Orçamento
+            <span className="hidden lg:inline">Pedir Orçamento</span>
+            <span className="lg:hidden">Orçamento</span>
           </a>
         </nav>
 
@@ -151,7 +152,6 @@ const Navbar = () => {
             </div>
             
             <Link to="/contato" onClick={closeMenu} className={`text-xl font-medium ${isActive('/contato') ? 'text-vecinos-primary' : 'text-vecinos-dark'}`}>Contato</Link>
-            <Link to="/blog" onClick={closeMenu} className={`text-xl font-medium ${isActive('/blog') ? 'text-vecinos-primary' : 'text-vecinos-dark'}`}>Blog</Link>
             <a 
               href="https://wa.me/5512979790618" 
               target="_blank" 
