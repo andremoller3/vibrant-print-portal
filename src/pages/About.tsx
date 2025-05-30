@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Users, Target, Clock, Award, ArrowRight } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -56,7 +55,7 @@ const About = () => {
       {/* History Section */}
       <section ref={historyRef} className="py-20 px-4">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-4xl mx-auto">
             <div className="animate-on-scroll">
               <span className="text-vecinos-orange font-semibold">Nossa História</span>
               <h2 className="text-3xl md:text-4xl font-bold text-vecinos-blue mt-2 mb-6">
@@ -71,13 +70,6 @@ const About = () => {
               <p className="text-gray-600">
                 Hoje, somos reconhecidos pela excelência em banners, adesivos, fachadas, impressão digital e envelopamento de veículos, sempre entregando cores vivas e acabamento impecável em cada projeto.
               </p>
-            </div>
-            <div className="animate-on-scroll animate-delay-200">
-              <img 
-                src="https://images.unsplash.com/photo-1572731621424-767f0ceda929?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                alt="História da Vecinos Comunicação Visual" 
-                className="w-full h-auto rounded-lg shadow-xl"
-              />
             </div>
           </div>
         </div>
