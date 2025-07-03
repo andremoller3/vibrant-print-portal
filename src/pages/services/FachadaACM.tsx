@@ -5,16 +5,16 @@ import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
 import useScrollToTop from '@/hooks/useScrollToTop';
 
-const AdesivacaoVeiculo = () => {
+const FachadaACM = () => {
   useScrollToTop();
   
   const benefits = [
-    "Vinil automotivo de alta qualidade",
-    "Proteção UV para maior durabilidade",
-    "Aplicação por profissionais especializados",
-    "Design personalizado para sua marca",
-    "Remoção sem danos à pintura original",
-    "Transforme seu veículo em mídia móvel"
+    "Material ACM de alta resistência",
+    "Acabamento moderno e sofisticado",
+    "Resistente a intempéries",
+    "Fácil manutenção e limpeza",
+    "Variedade de cores e acabamentos",
+    "Instalação com estrutura profissional"
   ];
 
   return (
@@ -26,11 +26,11 @@ const AdesivacaoVeiculo = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Adesivação de Veículos no Litoral Norte
+                Fachadas em ACM no Litoral Norte
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                Transforme seu veículo em uma ferramenta de marketing eficaz com nossa adesivação profissional. 
-                Qualidade garantida e aplicação especializada no Litoral Norte.
+                Modernize sua fachada com painéis de ACM (Aluminium Composite Material). 
+                Elegância, durabilidade e sofisticação para seu estabelecimento.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
@@ -46,8 +46,8 @@ const AdesivacaoVeiculo = () => {
             </div>
             <div className="relative">
               <img 
-                src="/lovable-uploads/20cc1627-98ba-4460-bb68-f82e51b5de7a.png"
-                alt="Adesivação profissional de veículos"
+                src="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true"
+                alt="Fachada em ACM profissional"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
             </div>
@@ -60,16 +60,16 @@ const AdesivacaoVeiculo = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-vecinos-blue mb-6">
-                Adesivação Automotiva Profissional
+                Fachadas em ACM Premium
               </h2>
               <p className="text-gray-600 mb-6">
-                A adesivação de veículos é uma das formas mais eficazes de divulgar sua marca. Na Vecinos, utilizamos vinil automotivo premium com proteção UV, garantindo cores vivas e durabilidade superior, mesmo sob sol e chuva constantes do litoral.
+                O ACM (Aluminium Composite Material) é a escolha ideal para fachadas modernas e sofisticadas. Composto por duas chapas de alumínio com núcleo de polietileno, oferece leveza, resistência e acabamento impecável.
               </p>
               <p className="text-gray-600 mb-8">
-                Nossa equipe especializada possui experiência em aplicação de adesivos em carros, motos, caminhões, vans e frotas comerciais. Criamos designs únicos que destacam sua marca nas ruas de Caraguatatuba e região.
+                Perfeito para estabelecimentos que buscam um visual contemporâneo e profissional, o ACM valoriza a arquitetura e transmite credibilidade ao seu negócio em Caraguatatuba e região.
               </p>
               
-              <h3 className="text-xl font-semibold text-vecinos-orange mb-4">Por Que Escolher Nossa Adesivação:</h3>
+              <h3 className="text-xl font-semibold text-vecinos-orange mb-4">Vantagens do ACM:</h3>
               <ul className="space-y-3 mb-8">
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-start">
@@ -91,13 +91,14 @@ const AdesivacaoVeiculo = () => {
             </div>
             
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h4 className="font-semibold text-vecinos-blue mb-3">Tipos de Adesivação:</h4>
+              <h4 className="font-semibold text-vecinos-blue mb-3">Especificações Técnicas:</h4>
               <ul className="text-gray-600 space-y-2">
-                <li>• Adesivação total (envelopamento completo)</li>
-                <li>• Adesivação parcial</li>
-                <li>• Lettering e logotipos</li>
-                <li>• Faixas decorativas</li>
-                <li>• Identificação de frotas</li>
+                <li>• Painel ACM 3mm ou 4mm</li>
+                <li>• Acabamentos: fosco, brilho, escovado</li>
+                <li>• Corte e dobra em CNC</li>
+                <li>• Estrutura em alumínio ou aço</li>
+                <li>• Fixação com rebites ou parafusos</li>
+                <li>• Aplicação de adesivos ou impressão UV</li>
               </ul>
             </div>
           </div>
@@ -107,11 +108,11 @@ const AdesivacaoVeiculo = () => {
       <section className="py-16 px-4 bg-vecinos-blue">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
-            Transforme Seu Veículo em Mídia Móvel!
+            Modernize Sua Fachada com ACM!
           </h2>
           <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
-            Solicite seu orçamento para adesivação automotiva profissional. 
-            Destaque sua marca nas ruas do Litoral Norte!
+            Solicite seu orçamento para fachada em ACM e dê um visual moderno e profissional 
+            ao seu estabelecimento!
           </p>
           <a 
             href="https://wa.me/5512979790618" 
@@ -130,4 +131,4 @@ const AdesivacaoVeiculo = () => {
   );
 };
 
-export default AdesivacaoVeiculo;
+export default FachadaACM;

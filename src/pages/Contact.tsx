@@ -1,4 +1,3 @@
-
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -36,8 +35,8 @@ const Contact = () => {
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-vecinos-blue mb-1">Endereço</h3>
                     <p className="text-gray-600">
-                      Av. Oswaldo Cruz, 557, Centro<br />
-                      Caraguatatuba, SP, 11660-300
+                      Av. Mal. Floriano Peixoto, 100 - Poiares<br />
+                      Caraguatatuba - SP, 11673-000
                     </p>
                   </div>
                 </div>
@@ -90,7 +89,7 @@ const Contact = () => {
           <h2 className="text-3xl font-bold text-vecinos-blue mb-8 text-center">Localização</h2>
           <div className="rounded-lg overflow-hidden shadow-lg h-96 animate-slide-in-bottom">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.5155249630735!2d-45.40803178441418!3d-23.620742869819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd631551d2b977%3A0x4bb832a3afa2c0b0!2sAv.%20Oswaldo%20Cruz%2C%20557%20-%20Centro%2C%20Caraguatatuba%20-%20SP%2C%2011660-300!5e0!3m2!1spt-BR!2sbr!4v1621956578654!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.5!2d-45.408!3d-23.621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd631551d2b977%3A0x4bb832a3afa2c0b0!2sAv.%20Mal.%20Floriano%20Peixoto%2C%20100%20-%20Poiares%2C%20Caraguatatuba%20-%20SP%2C%2011673-000!5e0!3m2!1spt-BR!2sbr!4v1621956578654!5m2!1spt-BR!2sbr"
               width="100%"
               height="100%"
               style={{ border: 0 }}

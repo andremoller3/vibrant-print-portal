@@ -89,46 +89,60 @@ const Services = () => {
               delay={300} 
             />
             <ServiceCard 
+              title="Fachada em Lona" 
+              description="Fachadas comerciais em lona vinílica de alta resistência com impressão digital e instalação profissional." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true" 
+              link="/servicos/fachada-lona" 
+              delay={400} 
+            />
+            <ServiceCard 
+              title="Fachada em ACM" 
+              description="Painéis de ACM para fachadas modernas e sofisticadas com acabamento premium e durabilidade superior." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true" 
+              link="/servicos/fachada-acm" 
+              delay={500} 
+            />
+            <ServiceCard 
               title="Cartão de Visita" 
               description="Impressão em papel couché com acabamento fosco ou brilho, laminação e verniz localizado." 
               imageUrl="https://github.com/andremoller3/videos/blob/main/cartao.jpg?raw=true" 
               link="/servicos/cartao-visita" 
-              delay={400} 
+              delay={600} 
             />
             <ServiceCard 
               title="Panfletos e Flyers" 
               description="Impressão digital em alta qualidade para campanhas publicitárias e divulgação de eventos." 
               imageUrl="https://github.com/andremoller3/videos/blob/main/flyer.jpg?raw=true" 
               link="/servicos/panfletos" 
-              delay={500} 
+              delay={700} 
             />
             <ServiceCard 
               title="Wind Banners" 
               description="Displays portáteis ideais para eventos, feiras e pontos de venda com fácil montagem." 
               imageUrl="https://github.com/andremoller3/videos/blob/main/wind.jpg?raw=true" 
               link="/servicos/wind-banners" 
-              delay={600} 
+              delay={800} 
             />
             <ServiceCard 
               title="Placas de PVC" 
               description="Placas rígidas em PVC para sinalização interna e externa com impressão direta." 
               imageUrl="https://github.com/andremoller3/videos/blob/main/pvc.jpg?raw=true" 
               link="/servicos/placa-pvc" 
-              delay={700} 
+              delay={900} 
             />
             <ServiceCard 
               title="Cardápios" 
               description="Cardápios personalizados em diversos materiais com laminação para proteção e durabilidade." 
               imageUrl="https://github.com/andremoller3/videos/blob/main/cardapio.jpg?raw=true" 
               link="/servicos/cardapios" 
-              delay={800} 
+              delay={1000} 
             />
             <ServiceCard 
               title="Camisetas Personalizadas" 
               description="Estampas em camisetas com técnicas de sublimação, serigrafia e transfer para eventos e uniformes." 
               imageUrl="https://github.com/andremoller3/videos/blob/main/camisa.jpg?raw=true" 
               link="/servicos/camisetas-personalizadas" 
-              delay={900} 
+              delay={1100} 
             />
           </div>
         </div>

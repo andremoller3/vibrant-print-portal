@@ -75,7 +75,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="mr-3 text-vecinos-orange flex-shrink-0 mt-1" size={18} />
-                <span className="text-gray-300 text-sm sm:text-base">Av. Oswaldo Cruz, 557, Centro, Caraguatatuba, SP, 11660-300</span>
+                <span className="text-gray-300 text-sm sm:text-base">Av. Mal. Floriano Peixoto, 100 - Poiares, Caraguatatuba - SP, 11673-000</span>
               </li>
               <li className="flex items-center">
                 <Phone className="mr-3 text-vecinos-orange flex-shrink-0" size={18} />

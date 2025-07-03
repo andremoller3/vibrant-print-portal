@@ -75,6 +75,10 @@ const ServiceCard = ({
       return "/servicos/cardapios";
     } else if (title.includes("Camiseta")) {
       return "/servicos/camisetas-personalizadas";
+    } else if (title.includes("Fachada") && title.includes("Lona")) {
+      return "/servicos/fachada-lona";
+    } else if (title.includes("Fachada") && title.includes("ACM")) {
+      return "/servicos/fachada-acm";
     }
     return link; // fallback to original link
   };
@@ -89,6 +93,10 @@ const ServiceCard = ({
       return "/lovable-uploads/20cc1627-98ba-4460-bb68-f82e51b5de7a.png";
     } else if (title.includes("Wind")) {
       return "https://github.com/andremoller3/videos/blob/main/wind.jpg?raw=true";
+    } else if (title.includes("Fachada") && title.includes("Lona")) {
+      return "https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true";
+    } else if (title.includes("Fachada") && title.includes("ACM")) {
+      return "https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true";
     } else {
       return imageUrl;
     }
