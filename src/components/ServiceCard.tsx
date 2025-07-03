@@ -85,6 +85,8 @@ const ServiceCard = ({
       return "https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true";
     } else if (title.includes("Adesivos") || title.includes("Rótulos")) {
       return "https://github.com/andremoller3/videos/blob/main/adesivos.jpg?raw=true";
+    } else if (title.includes("Envelopamento") || title.includes("Veículos")) {
+      return "/lovable-uploads/20cc1627-98ba-4460-bb68-f82e51b5de7a.png";
     } else if (title.includes("Wind")) {
       return "https://github.com/andremoller3/videos/blob/main/wind.jpg?raw=true";
     } else {
