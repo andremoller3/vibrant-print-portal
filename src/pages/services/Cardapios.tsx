@@ -45,7 +45,7 @@ const Cardapios = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://github.com/andremoller3/videos/blob/main/cardapio.jpg?raw=true"
+                src="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_43_14%20PM.png?raw=true"
                 alt="Cardápios para restaurantes"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
