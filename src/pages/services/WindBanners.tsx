@@ -1,3 +1,4 @@
+
 import { ArrowRight, Check, MessageCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -45,7 +46,7 @@ const WindBanners = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://github.com/andremoller3/videos/blob/main/wind.jpg?raw=true"
+                src="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_19_07%20PM.png?raw=true"
                 alt="Wind banners para eventos"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />

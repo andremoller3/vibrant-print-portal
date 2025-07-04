@@ -46,7 +46,7 @@ const FachadaLona = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true"
+                src="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_14_49%20PM.png?raw=true"
                 alt="Fachada em lona profissional"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
