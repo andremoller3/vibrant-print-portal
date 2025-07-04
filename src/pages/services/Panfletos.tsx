@@ -9,7 +9,7 @@ const Panfletos = () => {
   
   const benefits = [
     "Impressão offset e digital de alta qualidade",
-    "Papel couché ou sulfite conforme necessidade",
+    "Papel couché ou sulfite conforme necessidade", 
     "Baixas e altas tiragens",
     "Design atrativo e persuasivo",
     "Entrega rápida para campanhas urgentes",
@@ -45,7 +45,7 @@ const Panfletos = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://github.com/andremoller3/videos/blob/main/flyer.jpg?raw=true"
+                src="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_26_54%20PM.png?raw=true"
                 alt="Panfletos e materiais promocionais"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />

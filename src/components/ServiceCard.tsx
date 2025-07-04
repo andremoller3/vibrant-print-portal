@@ -79,6 +79,8 @@ const ServiceCard = ({
       return "/servicos/fachada-lona";
     } else if (title.includes("Fachada") && title.includes("ACM")) {
       return "/servicos/fachada-acm";
+    } else if (title.includes("Luminosos")) {
+      return "/servicos/luminosos";
     }
     return link; // fallback to original link
   };
@@ -96,6 +98,8 @@ const ServiceCard = ({
     } else if (title.includes("Fachada") && title.includes("Lona")) {
       return "https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_14_49%20PM.png?raw=true";
     } else if (title.includes("Fachada") && title.includes("ACM")) {
+      return "https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_06_14%20PM.png?raw=true";
+    } else if (title.includes("Luminosos")) {
       return "https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_06_14%20PM.png?raw=true";
     } else {
       return imageUrl;

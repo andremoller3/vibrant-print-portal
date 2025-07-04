@@ -9,7 +9,7 @@ const CamisetasPersonalizadas = () => {
   
   const benefits = [
     "Impressão em silk-screen e transfer",
-    "Camisetas de alta qualidade",
+    "Camisetas de alta qualidade", 
     "Cores resistentes à lavagem",
     "Diversos modelos e tamanhos",
     "Design personalizado incluído",
@@ -45,7 +45,7 @@ const CamisetasPersonalizadas = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://github.com/andremoller3/videos/blob/main/camisa.jpg?raw=true"
+                src="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_30_08%20PM.png?raw=true"
                 alt="Camisetas personalizadas"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />

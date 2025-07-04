@@ -1,19 +1,20 @@
+
 import { ArrowRight, Check, MessageCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
 import useScrollToTop from '@/hooks/useScrollToTop';
 
-const CartaoVisita = () => {
+const Luminosos = () => {
   useScrollToTop();
   
   const benefits = [
-    "Impressão em papel couché de alta qualidade",
-    "Acabamento fosco ou brilho", 
-    "Laminação plastificada disponível",
-    "Design profissional incluído",
-    "Entrega rápida em todo Litoral Norte",
-    "Preços competitivos para todas as quantidades"
+    "LED de alta eficiência energética",
+    "Acrílico cristal de primeira qualidade",
+    "Lona translúcida para grandes formatos",
+    "Instalação elétrica profissional",
+    "Design personalizado incluído",
+    "Garantia de 12 meses"
   ];
 
   return (
@@ -25,11 +26,11 @@ const CartaoVisita = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Cartões de Visita Profissionais em Caraguatatuba
+                Luminosos em Acrílico e Lona no Litoral Norte
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                Cartões de visita de alta qualidade para causar uma primeira impressão marcante. 
-                Design profissional e impressão premium no Litoral Norte.
+                Luminosos em LED para destacar sua marca 24 horas por dia. 
+                Soluções em acrílico e lona translúcida para máxima visibilidade em Caraguatatuba.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
@@ -45,8 +46,8 @@ const CartaoVisita = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_23_33%20PM.png?raw=true"
-                alt="Cartões de visita profissionais"
+                src="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_06_14%20PM.png?raw=true"
+                alt="Luminosos em acrílico e lona"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
             </div>
@@ -59,16 +60,16 @@ const CartaoVisita = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-vecinos-blue mb-6">
-                Cartões de Visita que Impressionam
+                Luminosos de Alta Qualidade e Durabilidade
               </h2>
               <p className="text-gray-600 mb-6">
-                Um cartão de visita bem feito é fundamental para o networking e apresentação profissional. Na Vecinos, produzimos cartões em papel couché de alta gramatura, com impressão offset de qualidade superior, garantindo cores vibrantes e acabamento impecável.
+                Os luminosos são fundamentais para destacar sua marca e garantir visibilidade noturna. Na Vecinos, produzimos luminosos em acrílico cristal e lona translúcida com tecnologia LED, oferecendo máxima eficiência energética e durabilidade superior.
               </p>
               <p className="text-gray-600 mb-8">
-                Oferecemos serviço completo: desde a criação do design até a impressão final. Nossos cartões são produzidos em diferentes gramaturas e acabamentos, adequados para todos os tipos de profissionais e empresas em Caraguatatuba e região.
+                Nossos luminosos são ideais para fachadas comerciais, pontos de venda e sinalização externa. Com instalação profissional e garantia estendida, seus luminosos funcionarão perfeitamente por anos, resistindo às condições do litoral.
               </p>
               
-              <h3 className="text-xl font-semibold text-vecinos-orange mb-4">Vantagens dos Nossos Cartões:</h3>
+              <h3 className="text-xl font-semibold text-vecinos-orange mb-4">Vantagens dos Nossos Luminosos:</h3>
               <ul className="space-y-3 mb-8">
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-start">
@@ -92,11 +93,11 @@ const CartaoVisita = () => {
             <div className="bg-gray-50 p-6 rounded-lg">
               <h4 className="font-semibold text-vecinos-blue mb-3">Opções Disponíveis:</h4>
               <ul className="text-gray-600 space-y-2">
-                <li>• Papel couché 250g ou 300g</li>
-                <li>• Acabamento fosco ou brilho</li>
-                <li>• Laminação plastificada</li>
-                <li>• Verniz localizado</li>
-                <li>• Design personalizado incluído</li>
+                <li>• Luminoso em acrílico cristal</li>
+                <li>• Luminoso em lona translúcida</li>
+                <li>• LED branco frio ou quente</li>
+                <li>• Estrutura em alumínio</li>
+                <li>• Instalação elétrica incluída</li>
               </ul>
             </div>
           </div>
@@ -106,11 +107,11 @@ const CartaoVisita = () => {
       <section className="py-16 px-4 bg-vecinos-blue">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
-            Cause uma Primeira Impressão Marcante!
+            Ilumine Sua Marca com Qualidade!
           </h2>
           <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
-            Solicite seu orçamento para cartões de visita profissionais. 
-            Design e impressão de qualidade no Litoral Norte!
+            Solicite seu orçamento para luminosos em acrílico ou lona. 
+            Visibilidade garantida 24 horas por dia no Litoral Norte!
           </p>
           <a 
             href="https://wa.me/5512979790618" 
@@ -129,4 +130,4 @@ const CartaoVisita = () => {
   );
 };
 
-export default CartaoVisita;
+export default Luminosos;

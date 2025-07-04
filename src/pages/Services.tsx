@@ -4,7 +4,6 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ServiceCard from '@/components/ServiceCard';
 import useScrollToTop from '@/hooks/useScrollToTop';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Services = () => {
   useScrollToTop();
@@ -67,196 +66,92 @@ const Services = () => {
             </p>
           </div>
 
-          <Tabs defaultValue="todos" className="w-full">
-            <TabsList className="grid w-full grid-cols-4 mb-12 bg-gray-100">
-              <TabsTrigger value="todos" className="data-[state=active]:bg-vecinos-blue data-[state=active]:text-white">
-                Todos os Serviços
-              </TabsTrigger>
-              <TabsTrigger value="fachadas" className="data-[state=active]:bg-vecinos-blue data-[state=active]:text-white">
-                Fachadas
-              </TabsTrigger>
-              <TabsTrigger value="impressos" className="data-[state=active]:bg-vecinos-blue data-[state=active]:text-white">
-                Impressos
-              </TabsTrigger>
-              <TabsTrigger value="adesivos" className="data-[state=active]:bg-vecinos-blue data-[state=active]:text-white">
-                Adesivos
-              </TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="todos">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <ServiceCard 
-                  title="Banners, Faixas e Fachadas" 
-                  description="Impressão em lona de alta definição com acabamento em madeiras ou ilhós para fachadas comerciais e eventos." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true" 
-                  link="/servicos/banners-faixas-fachadas" 
-                  delay={100} 
-                />
-                <ServiceCard 
-                  title="Fachada em Lona" 
-                  description="Fachadas comerciais em lona vinílica de alta resistência com impressão digital e instalação profissional." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_14_49%20PM.png?raw=true" 
-                  link="/servicos/fachada-lona" 
-                  delay={150} 
-                />
-                <ServiceCard 
-                  title="Fachada em ACM" 
-                  description="Painéis de ACM para fachadas modernas e sofisticadas com acabamento premium e durabilidade superior." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_06_14%20PM.png?raw=true" 
-                  link="/servicos/fachada-acm" 
-                  delay={200} 
-                />
-                <ServiceCard 
-                  title="Adesivos e Rótulos" 
-                  description="Vinil branco, transparente, perfurado ou recorte, com acabamento brilho ou fosco para diversas aplicações." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/adesivos.jpg?raw=true" 
-                  link="/servicos/adesivos-rotulos" 
-                  delay={250} 
-                />
-                <ServiceCard 
-                  title="Envelopamento de Veículos" 
-                  description="Adesivação personalizada com impressão digital ou vinil recorte para carros, motos e frotas." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/96b9141a-f77f-4bcf-8428-5d3073319377.png?raw=true" 
-                  link="/servicos/adesivacao-veiculo" 
-                  delay={300} 
-                />
-                <ServiceCard 
-                  title="Cartão de Visita" 
-                  description="Impressão em papel couché com acabamento fosco ou brilho, laminação e verniz localizado." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_23_33%20PM.png?raw=true" 
-                  link="/servicos/cartao-visita" 
-                  delay={350} 
-                />
-                <ServiceCard 
-                  title="Panfletos e Flyers" 
-                  description="Impressão digital em alta qualidade para campanhas publicitárias e divulgação de eventos." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_26_54%20PM.png?raw=true" 
-                  link="/servicos/panfletos" 
-                  delay={400} 
-                />
-                <ServiceCard 
-                  title="Wind Banners" 
-                  description="Displays portáteis ideais para eventos, feiras e pontos de venda com fácil montagem." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_19_07%20PM.png?raw=true" 
-                  link="/servicos/wind-banners" 
-                  delay={450} 
-                />
-                <ServiceCard 
-                  title="Placas de PVC" 
-                  description="Placas rígidas em PVC para sinalização interna e externa com impressão direta." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/pvc.jpg?raw=true" 
-                  link="/servicos/placa-pvc" 
-                  delay={500} 
-                />
-                <ServiceCard 
-                  title="Cardápios" 
-                  description="Cardápios personalizados em diversos materiais com laminação para proteção e durabilidade." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_43_14%20PM.png?raw=true" 
-                  link="/servicos/cardapios" 
-                  delay={550} 
-                />
-                <ServiceCard 
-                  title="Camisetas Personalizadas" 
-                  description="Estampas em camisetas com técnicas de sublimação, serigrafia e transfer para eventos e uniformes." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_30_08%20PM.png?raw=true" 
-                  link="/servicos/camisetas-personalizadas" 
-                  delay={600} 
-                />
-              </div>
-            </TabsContent>
-
-            <TabsContent value="fachadas">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <ServiceCard 
-                  title="Banners, Faixas e Fachadas" 
-                  description="Impressão em lona de alta definição com acabamento em madeiras ou ilhós para fachadas comerciais e eventos." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true" 
-                  link="/servicos/banners-faixas-fachadas" 
-                  delay={100} 
-                />
-                <ServiceCard 
-                  title="Fachada em Lona" 
-                  description="Fachadas comerciais em lona vinílica de alta resistência com impressão digital e instalação profissional." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true" 
-                  link="/servicos/fachada-lona" 
-                  delay={200} 
-                />
-                <ServiceCard 
-                  title="Fachada em ACM" 
-                  description="Painéis de ACM para fachadas modernas e sofisticadas com acabamento premium e durabilidade superior." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true" 
-                  link="/servicos/fachada-acm" 
-                  delay={300} 
-                />
-              </div>
-            </TabsContent>
-
-            <TabsContent value="impressos">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <ServiceCard 
-                  title="Cartão de Visita" 
-                  description="Impressão em papel couché com acabamento fosco ou brilho, laminação e verniz localizado." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/cartao.jpg?raw=true" 
-                  link="/servicos/cartao-visita" 
-                  delay={100} 
-                />
-                <ServiceCard 
-                  title="Panfletos e Flyers" 
-                  description="Impressão digital em alta qualidade para campanhas publicitárias e divulgação de eventos." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/flyer.jpg?raw=true" 
-                  link="/servicos/panfletos" 
-                  delay={200} 
-                />
-                <ServiceCard 
-                  title="Cardápios" 
-                  description="Cardápios personalizados em diversos materiais com laminação para proteção e durabilidade." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/cardapio.jpg?raw=true" 
-                  link="/servicos/cardapios" 
-                  delay={300} 
-                />
-                <ServiceCard 
-                  title="Camisetas Personalizadas" 
-                  description="Estampas em camisetas com técnicas de sublimação, serigrafia e transfer para eventos e uniformes." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/camisa.jpg?raw=true" 
-                  link="/servicos/camisetas-personalizadas" 
-                  delay={400} 
-                />
-              </div>
-            </TabsContent>
-
-            <TabsContent value="adesivos">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <ServiceCard 
-                  title="Adesivos e Rótulos" 
-                  description="Vinil branco, transparente, perfurado ou recorte, com acabamento brilho ou fosco para diversas aplicações." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/adesivos.jpg?raw=true" 
-                  link="/servicos/adesivos-rotulos" 
-                  delay={100} 
-                />
-                <ServiceCard 
-                  title="Envelopamento de Veículos" 
-                  description="Adesivação personalizada com impressão digital ou vinil recorte para carros, motos e frotas." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/96b9141a-f77f-4bcf-8428-5d3073319377.png?raw=true" 
-                  link="/servicos/adesivacao-veiculo" 
-                  delay={200} 
-                />
-                <ServiceCard 
-                  title="Wind Banners" 
-                  description="Displays portáteis ideais para eventos, feiras e pontos de venda com fácil montagem." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/wind.jpg?raw=true" 
-                  link="/servicos/wind-banners" 
-                  delay={300} 
-                />
-                <ServiceCard 
-                  title="Placas de PVC" 
-                  description="Placas rígidas em PVC para sinalização interna e externa com impressão direta." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/pvc.jpg?raw=true" 
-                  link="/servicos/placa-pvc" 
-                  delay={400} 
-                />
-              </div>
-            </TabsContent>
-          </Tabs>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <ServiceCard 
+              title="Banners, Faixas e Fachadas" 
+              description="Impressão em lona de alta definição com acabamento em madeiras ou ilhós para fachadas comerciais e eventos." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true" 
+              link="/servicos/banners-faixas-fachadas" 
+              delay={100} 
+            />
+            <ServiceCard 
+              title="Fachada em Lona" 
+              description="Fachadas comerciais em lona vinílica de alta resistência com impressão digital e instalação profissional." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_14_49%20PM.png?raw=true" 
+              link="/servicos/fachada-lona" 
+              delay={150} 
+            />
+            <ServiceCard 
+              title="Fachada em ACM" 
+              description="Painéis de ACM para fachadas modernas e sofisticadas com acabamento premium e durabilidade superior." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_06_14%20PM.png?raw=true" 
+              link="/servicos/fachada-acm" 
+              delay={200} 
+            />
+            <ServiceCard 
+              title="Luminosos em Acrílico ou Lona" 
+              description="Luminosos em LED para destacar sua marca 24 horas por dia com tecnologia e durabilidade superior." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_06_14%20PM.png?raw=true" 
+              link="/servicos/luminosos" 
+              delay={250} 
+            />
+            <ServiceCard 
+              title="Adesivos e Rótulos" 
+              description="Vinil branco, transparente, perfurado ou recorte, com acabamento brilho ou fosco para diversas aplicações." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/adesivos.jpg?raw=true" 
+              link="/servicos/adesivos-rotulos" 
+              delay={300} 
+            />
+            <ServiceCard 
+              title="Envelopamento de Veículos" 
+              description="Adesivação personalizada com impressão digital ou vinil recorte para carros, motos e frotas." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/96b9141a-f77f-4bcf-8428-5d3073319377.png?raw=true" 
+              link="/servicos/adesivacao-veiculo" 
+              delay={350} 
+            />
+            <ServiceCard 
+              title="Cartão de Visita" 
+              description="Impressão em papel couché com acabamento fosco ou brilho, laminação e verniz localizado." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_23_33%20PM.png?raw=true" 
+              link="/servicos/cartao-visita" 
+              delay={400} 
+            />
+            <ServiceCard 
+              title="Panfletos e Flyers" 
+              description="Impressão digital em alta qualidade para campanhas publicitárias e divulgação de eventos." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_26_54%20PM.png?raw=true" 
+              link="/servicos/panfletos" 
+              delay={450} 
+            />
+            <ServiceCard 
+              title="Wind Banners" 
+              description="Displays portáteis ideais para eventos, feiras e pontos de venda com fácil montagem." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_19_07%20PM.png?raw=true" 
+              link="/servicos/wind-banners" 
+              delay={500} 
+            />
+            <ServiceCard 
+              title="Placas de PVC" 
+              description="Placas rígidas em PVC para sinalização interna e externa com impressão direta." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/pvc.jpg?raw=true" 
+              link="/servicos/placa-pvc" 
+              delay={550} 
+            />
+            <ServiceCard 
+              title="Cardápios" 
+              description="Cardápios personalizados em diversos materiais com laminação para proteção e durabilidade." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_43_14%20PM.png?raw=true" 
+              link="/servicos/cardapios" 
+              delay={600} 
+            />
+            <ServiceCard 
+              title="Camisetas Personalizadas" 
+              description="Estampas em camisetas com técnicas de sublimação, serigrafia e transfer para eventos e uniformes." 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_30_08%20PM.png?raw=true" 
+              link="/servicos/camisetas-personalizadas" 
+              delay={650} 
+            />
+          </div>
         </div>
       </section>
 

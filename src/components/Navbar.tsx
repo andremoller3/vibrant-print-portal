@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, MessageCircle } from 'lucide-react';
@@ -52,6 +53,7 @@ const Navbar = () => {
     { name: 'Banners, Faixas e Fachadas', path: '/servicos/banners-faixas-fachadas' },
     { name: 'Fachada em Lona', path: '/servicos/fachada-lona' },
     { name: 'Fachada em ACM', path: '/servicos/fachada-acm' },
+    { name: 'Luminosos em Acrílico ou Lona', path: '/servicos/luminosos' },
     { name: 'Adesivos e Rótulos', path: '/servicos/adesivos-rotulos' },
     { name: 'Adesivação de Veículo', path: '/servicos/adesivacao-veiculo' },
     { name: 'Cartão de Visita', path: '/servicos/cartao-visita' },
