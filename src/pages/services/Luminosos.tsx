@@ -14,6 +14,7 @@ const Luminosos = () => {
     "Lona translúcida para grandes formatos",
     "Instalação elétrica profissional",
     "Design personalizado incluído",
+    
   ];
 
   return (
