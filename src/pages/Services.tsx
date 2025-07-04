@@ -95,14 +95,14 @@ const Services = () => {
                 <ServiceCard 
                   title="Fachada em Lona" 
                   description="Fachadas comerciais em lona vinílica de alta resistência com impressão digital e instalação profissional." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true" 
+                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_14_49%20PM.png?raw=true" 
                   link="/servicos/fachada-lona" 
                   delay={150} 
                 />
                 <ServiceCard 
                   title="Fachada em ACM" 
                   description="Painéis de ACM para fachadas modernas e sofisticadas com acabamento premium e durabilidade superior." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true" 
+                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_06_14%20PM.png?raw=true" 
                   link="/servicos/fachada-acm" 
                   delay={200} 
                 />
@@ -123,21 +123,21 @@ const Services = () => {
                 <ServiceCard 
                   title="Cartão de Visita" 
                   description="Impressão em papel couché com acabamento fosco ou brilho, laminação e verniz localizado." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/cartao.jpg?raw=true" 
+                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_23_33%20PM.png?raw=true" 
                   link="/servicos/cartao-visita" 
                   delay={350} 
                 />
                 <ServiceCard 
                   title="Panfletos e Flyers" 
                   description="Impressão digital em alta qualidade para campanhas publicitárias e divulgação de eventos." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/flyer.jpg?raw=true" 
+                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_26_54%20PM.png?raw=true" 
                   link="/servicos/panfletos" 
                   delay={400} 
                 />
                 <ServiceCard 
                   title="Wind Banners" 
                   description="Displays portáteis ideais para eventos, feiras e pontos de venda com fácil montagem." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/wind.jpg?raw=true" 
+                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_19_07%20PM.png?raw=true" 
                   link="/servicos/wind-banners" 
                   delay={450} 
                 />
@@ -151,14 +151,14 @@ const Services = () => {
                 <ServiceCard 
                   title="Cardápios" 
                   description="Cardápios personalizados em diversos materiais com laminação para proteção e durabilidade." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/cardapio.jpg?raw=true" 
+                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_43_14%20PM.png?raw=true" 
                   link="/servicos/cardapios" 
                   delay={550} 
                 />
                 <ServiceCard 
                   title="Camisetas Personalizadas" 
                   description="Estampas em camisetas com técnicas de sublimação, serigrafia e transfer para eventos e uniformes." 
-                  imageUrl="https://github.com/andremoller3/videos/blob/main/camisa.jpg?raw=true" 
+                  imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_30_08%20PM.png?raw=true" 
                   link="/servicos/camisetas-personalizadas" 
                   delay={600} 
                 />
