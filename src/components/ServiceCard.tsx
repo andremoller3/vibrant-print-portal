@@ -100,7 +100,7 @@ const ServiceCard = ({
     } else if (title.includes("Fachada") && title.includes("ACM")) {
       return "https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_06_14%20PM.png?raw=true";
     } else if (title.includes("Luminosos")) {
-      return "https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_06_14%20PM.png?raw=true";
+      return "https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%204%20de%20jul.%20de%202025,%2017_34_43.png?raw=true";
     } else {
       return imageUrl;
     }

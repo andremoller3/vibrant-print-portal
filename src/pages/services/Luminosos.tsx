@@ -46,7 +46,7 @@ const Luminosos = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_06_14%20PM.png?raw=true"
+                src="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%204%20de%20jul.%20de%202025,%2017_34_43.png?raw=true"
                 alt="Luminosos em acrílico e lona"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
