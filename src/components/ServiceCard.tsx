@@ -90,9 +90,9 @@ const ServiceCard = ({
     if (title.includes("Wind")) {
       return "https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_19_07%20PM.png?raw=true";
     } else if (title.includes("Banners") || title.includes("Faixas") || title.includes("Fachadas")) {
-      return "https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true";
+      return "https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%204%20de%20jul.%20de%202025,%2018_46_18.png?raw=true";
     } else if (title.includes("Adesivos") || title.includes("Rótulos")) {
-      return "https://github.com/andremoller3/videos/blob/main/adesivos.jpg?raw=true";
+      return "https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%204%20de%20jul.%20de%202025,%2018_51_34.png?raw=true";
     } else if (title.includes("Envelopamento") || title.includes("Veículos")) {
       return "/lovable-uploads/20cc1627-98ba-4460-bb68-f82e51b5de7a.png";
     } else if (title.includes("Fachada") && title.includes("Lona")) {

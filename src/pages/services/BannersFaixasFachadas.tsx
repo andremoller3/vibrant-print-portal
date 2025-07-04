@@ -46,7 +46,7 @@ const BannersFaixasFachadas = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true"
+                src="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%204%20de%20jul.%20de%202025,%2018_46_18.png?raw=true"
                 alt="Banners e fachadas personalizadas em Caraguatatuba"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
