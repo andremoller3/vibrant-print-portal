@@ -133,7 +133,7 @@ const Services = () => {
             <ServiceCard 
               title="Placas de PVC" 
               description="Placas rígidas em PVC para sinalização interna e externa com impressão direta." 
-              imageUrl="https://github.com/andremoller3/videos/blob/main/pvc.jpg?raw=true" 
+              imageUrl="https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%204%20de%20jul.%20de%202025,%2019_10_48.png?raw=true" 
               link="/servicos/placa-pvc" 
               delay={550} 
             />
