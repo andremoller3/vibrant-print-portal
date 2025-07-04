@@ -21,6 +21,7 @@ import Cardapios from "./pages/services/Cardapios";
 import CamisetasPersonalizadas from "./pages/services/CamisetasPersonalizadas";
 import FachadaLona from "./pages/services/FachadaLona";
 import FachadaACM from "./pages/services/FachadaACM";
+import Luminosos from "./pages/services/Luminosos";
 
 const queryClient = new QueryClient();
 
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/servicos/camisetas-personalizadas" element={<CamisetasPersonalizadas />} />
           <Route path="/servicos/fachada-lona" element={<FachadaLona />} />
           <Route path="/servicos/fachada-acm" element={<FachadaACM />} />
+          <Route path="/servicos/luminosos" element={<Luminosos />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
