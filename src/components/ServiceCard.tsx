@@ -57,7 +57,9 @@ const ServiceCard = ({
 
   // Function to get specific service page link
   const getServiceLink = () => {
-    if (title.includes("Banners") || title.includes("Faixas") || title.includes("Fachadas")) {
+    if (title.includes("Wind")) {
+      return "/servicos/wind-banners";
+    } else if (title.includes("Banners") || title.includes("Faixas") || title.includes("Fachadas")) {
       return "/servicos/banners-faixas-fachadas";
     } else if (title.includes("Adesivos") || title.includes("Rótulos")) {
       return "/servicos/adesivos-rotulos";
@@ -67,8 +69,6 @@ const ServiceCard = ({
       return "/servicos/cartao-visita";
     } else if (title.includes("Panfletos")) {
       return "/servicos/panfletos";
-    } else if (title.includes("Wind")) {
-      return "/servicos/wind-banners";
     } else if (title.includes("Placa") && title.includes("PVC")) {
       return "/servicos/placa-pvc";
     } else if (title.includes("Cardápio")) {
@@ -87,14 +87,14 @@ const ServiceCard = ({
 
   // Adicionando imagem de capa com base no título do serviço
   const getCoverImage = () => {
-    if (title.includes("Banners") || title.includes("Faixas") || title.includes("Fachadas")) {
+    if (title.includes("Wind")) {
+      return "https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_19_07%20PM.png?raw=true";
+    } else if (title.includes("Banners") || title.includes("Faixas") || title.includes("Fachadas")) {
       return "https://github.com/andremoller3/videos/blob/main/banner%20(2).jpg?raw=true";
     } else if (title.includes("Adesivos") || title.includes("Rótulos")) {
       return "https://github.com/andremoller3/videos/blob/main/adesivos.jpg?raw=true";
     } else if (title.includes("Envelopamento") || title.includes("Veículos")) {
       return "/lovable-uploads/20cc1627-98ba-4460-bb68-f82e51b5de7a.png";
-    } else if (title.includes("Wind")) {
-      return "https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_19_07%20PM.png?raw=true";
     } else if (title.includes("Fachada") && title.includes("Lona")) {
       return "https://github.com/andremoller3/videos/blob/main/ChatGPT%20Image%20Jul%203,%202025,%2005_14_49%20PM.png?raw=true";
     } else if (title.includes("Fachada") && title.includes("ACM")) {
