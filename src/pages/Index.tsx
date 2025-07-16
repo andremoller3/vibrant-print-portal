@@ -182,7 +182,23 @@ const Index = () => {
             <rect width="100%" height="100%" fill="url(#grid)" />
           </svg>
         </div>
-        
+        <div className="container mx-auto text-center relative z-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Pronto para Destacar sua Marca?
+          </h2>
+          <p className="text-white text-lg mb-8 max-w-2xl mx-auto">
+            Entre em contato conosco e transforme suas ideias em realidade com a melhor qualidade de impressão do Litoral Norte.
+          </p>
+          <a 
+            href="https://wa.me/5512979790618" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn btn-primary bg-vecinos-orange hover:bg-opacity-90 inline-flex items-center text-lg px-8 py-4"
+          >
+            Fale Conosco Agora
+            <ArrowRight size={20} className="ml-2" />
+          </a>
+        </div>
       </section>
 
       {/* Testimonials Section */}
