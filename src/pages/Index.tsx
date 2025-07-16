@@ -7,12 +7,14 @@ import TestimonialCard from '@/components/TestimonialCard';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import useScrollToTop from '@/hooks/useScrollToTop';
+
 const Index = () => {
   useScrollToTop();
   const aboutSectionRef = useRef<HTMLDivElement>(null);
   const serviceSectionRef = useRef<HTMLDivElement>(null);
   const whySectionRef = useRef<HTMLDivElement>(null);
   const testimonialSectionRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -36,7 +38,9 @@ const Index = () => {
     });
     return () => observer.disconnect();
   }, []);
+
   const heroImageUrl = "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2071&auto=format&fit=crop";
+
   return <>
       <Navbar />
       
@@ -172,7 +176,7 @@ const Index = () => {
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 0 10 L 40 10 M 10 0 L 10 40" fill="none" stroke="white" strokeWidth="1" />
+                <path d="M 0 10 L 40 10 M 10 0 L 10 40" fill="none" stroke="#ff6200" strokeWidth="1" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#grid)" />
@@ -206,4 +210,5 @@ const Index = () => {
       <Footer />
     </>;
 };
+
 export default Index;
