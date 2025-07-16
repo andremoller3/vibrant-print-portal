@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, FileText, Clock, Truck, Zap, Award, Users } from 'lucide-react';
@@ -7,17 +8,20 @@ import TestimonialCard from '@/components/TestimonialCard';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import useScrollToTop from '@/hooks/useScrollToTop';
+
 const Index = () => {
   useScrollToTop();
   const aboutSectionRef = useRef<HTMLDivElement>(null);
   const serviceSectionRef = useRef<HTMLDivElement>(null);
   const whySectionRef = useRef<HTMLDivElement>(null);
   const testimonialSectionRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -10% 0px'
     };
+
     const handleIntersect = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -26,7 +30,9 @@ const Index = () => {
         }
       });
     };
+
     const observer = new IntersectionObserver(handleIntersect, observerOptions);
+
     const sections = [aboutSectionRef.current, serviceSectionRef.current, whySectionRef.current, testimonialSectionRef.current];
     sections.forEach(section => {
       if (section) {
@@ -34,9 +40,12 @@ const Index = () => {
         animateElements.forEach(el => observer.observe(el));
       }
     });
+
     return () => observer.disconnect();
   }, []);
+
   const heroImageUrl = "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2071&auto=format&fit=crop";
+
   return <>
       <Navbar />
       
@@ -167,7 +176,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-vecinos-blue relative overflow-hidden">
+      <section className="py-16 px-4 bg-vecinos-orange relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -206,4 +215,5 @@ const Index = () => {
       <Footer />
     </>;
 };
+
 export default Index;

@@ -115,7 +115,7 @@ const ServiceCard = ({
     >
       <div className="relative">
         {/* Imagem de capa no topo do card */}
-        <div className="w-full h-12 bg-vecinos-blue flex items-center justify-center">
+        <div className="w-full h-12 bg-vecinos-orange flex items-center justify-center">
           <span className="text-white font-medium text-sm">Comunicação Visual</span>
         </div>
       </div>
