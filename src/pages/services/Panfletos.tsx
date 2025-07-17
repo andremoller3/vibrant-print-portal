@@ -20,14 +20,14 @@ const Panfletos = () => {
     <>
       <Navbar />
       
-      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-blue to-blue-600">
+      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-orange to-orange-600">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 Panfletos e Folhetos em Caraguatatuba
               </h1>
-              <p className="text-xl mb-8 text-blue-100">
+              <p className="text-xl mb-8 text-orange-100">
                 Panfletos impressos para divulgação, promoções e campanhas publicitárias. 
                 Material promocional eficaz para seu negócio no Litoral Norte.
               </p>
@@ -103,12 +103,12 @@ const Panfletos = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-vecinos-blue">
+      <section className="py-16 px-4 bg-vecinos-orange">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Divulgue Seu Negócio com Panfletos de Qualidade!
           </h2>
-          <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
+          <p className="text-orange-100 mb-8 text-lg max-w-2xl mx-auto">
             Solicite seu orçamento para panfletos e materiais promocionais. 
             Campanhas eficazes começam aqui!
           </p>

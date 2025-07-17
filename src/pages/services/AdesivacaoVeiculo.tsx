@@ -1,4 +1,3 @@
-
 import { ArrowRight, Check, MessageCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -10,7 +9,7 @@ const AdesivacaoVeiculo = () => {
   
   const benefits = [
     "Vinil automotivo de alta qualidade",
-    "Proteção UV para maior durabilidade",
+    "Proteção UV para maior durabilidade", 
     "Aplicação por profissionais especializados",
     "Design personalizado para sua marca",
     "Remoção sem danos à pintura original",
@@ -21,14 +20,14 @@ const AdesivacaoVeiculo = () => {
     <>
       <Navbar />
       
-      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-blue to-blue-600">
+      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-orange to-orange-600">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 Adesivação de Veículos no Litoral Norte
               </h1>
-              <p className="text-xl mb-8 text-blue-100">
+              <p className="text-xl mb-8 text-orange-100">
                 Transforme seu veículo em uma ferramenta de marketing eficaz com nossa adesivação profissional. 
                 Qualidade garantida e aplicação especializada no Litoral Norte.
               </p>
@@ -104,12 +103,12 @@ const AdesivacaoVeiculo = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-vecinos-blue">
+      <section className="py-16 px-4 bg-vecinos-orange">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Transforme Seu Veículo em Mídia Móvel!
           </h2>
-          <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
+          <p className="text-orange-100 mb-8 text-lg max-w-2xl mx-auto">
             Solicite seu orçamento para adesivação automotiva profissional. 
             Destaque sua marca nas ruas do Litoral Norte!
           </p>

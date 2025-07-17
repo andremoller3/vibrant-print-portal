@@ -40,12 +40,12 @@ const Services = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-blue to-blue-600">
+      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-orange to-orange-600">
         <div className="container mx-auto text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             Nossos Serviços de Comunicação Visual
           </h1>
-          <p className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-orange-100 max-w-3xl mx-auto">
             Oferecemos soluções completas em comunicação visual para empresas e negócios 
             em Caraguatatuba, Ubatuba, São Sebastião e Ilhabela.
           </p>
@@ -156,12 +156,12 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-vecinos-blue">
+      <section className="py-16 px-4 bg-vecinos-orange">
         <div className="container mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
             Precisa de um Orçamento Personalizado?
           </h2>
-          <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
+          <p className="text-orange-100 mb-8 text-lg max-w-2xl mx-auto">
             Entre em contato conosco e receba um orçamento sob medida para suas necessidades 
             de comunicação visual no Litoral Norte.
           </p>
