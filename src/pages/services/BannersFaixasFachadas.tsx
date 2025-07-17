@@ -9,7 +9,7 @@ const BannersFaixasFachadas = () => {
   
   const benefits = [
     "Impressão em alta resolução",
-    "Materiais resistentes",
+    "Materiais resistentes", 
     "Acabamento em madeiras ou ilhós",
     "Tamanhos personalizados conforme necessidade",
     "Cores vivas e duradouras",
@@ -21,14 +21,14 @@ const BannersFaixasFachadas = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-blue to-blue-600">
+      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-orange to-orange-600">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 Banners, Faixas e Fachadas em Caraguatatuba
               </h1>
-              <p className="text-xl mb-8 text-blue-100">
+              <p className="text-xl mb-8 text-orange-100">
                 Impressão em lona de alta definição para fachadas comerciais, eventos e divulgação. 
                 Destaque seu negócio com qualidade profissional no Litoral Norte.
               </p>
@@ -104,12 +104,12 @@ const BannersFaixasFachadas = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-vecinos-blue">
+      <section className="py-16 px-4 bg-vecinos-orange">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Pronto para Destacar Seu Negócio?
           </h2>
-          <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
+          <p className="text-orange-100 mb-8 text-lg max-w-2xl mx-auto">
             Solicite seu orçamento personalizado para banners, faixas e fachadas. 
             Atendemos todo o Litoral Norte com qualidade garantida!
           </p>

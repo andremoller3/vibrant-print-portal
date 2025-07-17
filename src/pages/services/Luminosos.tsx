@@ -1,4 +1,3 @@
-
 import { ArrowRight, Check, MessageCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -10,7 +9,7 @@ const Luminosos = () => {
   
   const benefits = [
     "LED de alta eficiência energética",
-    "Acrílico cristal de primeira qualidade",
+    "Acrílico cristal de primeira qualidade", 
     "Lona translúcida para grandes formatos",
     "Instalação elétrica profissional",
     "Design personalizado incluído",
@@ -21,14 +20,14 @@ const Luminosos = () => {
     <>
       <Navbar />
       
-      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-blue to-blue-600">
+      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-orange to-orange-600">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 Luminosos em Acrílico e Lona no Litoral Norte
               </h1>
-              <p className="text-xl mb-8 text-blue-100">
+              <p className="text-xl mb-8 text-orange-100">
                 Luminosos em LED para destacar sua marca 24 horas por dia. 
                 Soluções em acrílico e lona translúcida para máxima visibilidade em Caraguatatuba.
               </p>
@@ -104,12 +103,12 @@ const Luminosos = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-vecinos-blue">
+      <section className="py-16 px-4 bg-vecinos-orange">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ilumine Sua Marca com Qualidade!
           </h2>
-          <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
+          <p className="text-orange-100 mb-8 text-lg max-w-2xl mx-auto">
             Solicite seu orçamento para luminosos em acrílico ou lona. 
             Visibilidade garantida 24 horas por dia no Litoral Norte!
           </p>

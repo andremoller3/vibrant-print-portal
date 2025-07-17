@@ -9,7 +9,7 @@ const PlacaPVC = () => {
   
   const benefits = [
     "Material resistente e durável",
-    "Não deforma com umidade",
+    "Não deforma com umidade", 
     "Fácil limpeza e manutenção",
     "Cores vivas e duradouras",
     "Ideal para uso interno e externo",
@@ -20,14 +20,14 @@ const PlacaPVC = () => {
     <>
       <Navbar />
       
-      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-blue to-blue-600">
+      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-orange to-orange-600">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 Placas de PVC em Caraguatatuba
               </h1>
-              <p className="text-xl mb-8 text-blue-100">
+              <p className="text-xl mb-8 text-orange-100">
                 Placas de PVC resistentes e duráveis para sinalização interna e externa. 
                 Qualidade superior para identificação e comunicação visual no Litoral Norte.
               </p>
@@ -103,12 +103,12 @@ const PlacaPVC = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-vecinos-blue">
+      <section className="py-16 px-4 bg-vecinos-orange">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Sinalize com Qualidade e Durabilidade!
           </h2>
-          <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
+          <p className="text-orange-100 mb-8 text-lg max-w-2xl mx-auto">
             Solicite seu orçamento para placas de PVC personalizadas. 
             Sinalização profissional e resistente no Litoral Norte!
           </p>

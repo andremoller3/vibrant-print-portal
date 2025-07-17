@@ -20,14 +20,14 @@ const CartaoVisita = () => {
     <>
       <Navbar />
       
-      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-blue to-blue-600">
+      <div className="pt-32 pb-16 px-4 bg-gradient-to-r from-vecinos-orange to-orange-600">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 Cartões de Visita Profissionais em Caraguatatuba
               </h1>
-              <p className="text-xl mb-8 text-blue-100">
+              <p className="text-xl mb-8 text-orange-100">
                 Cartões de visita de alta qualidade para causar uma primeira impressão marcante. 
                 Design profissional e impressão premium no Litoral Norte.
               </p>
@@ -103,12 +103,12 @@ const CartaoVisita = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-vecinos-blue">
+      <section className="py-16 px-4 bg-vecinos-orange">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Cause uma Primeira Impressão Marcante!
           </h2>
-          <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
+          <p className="text-orange-100 mb-8 text-lg max-w-2xl mx-auto">
             Solicite seu orçamento para cartões de visita profissionais. 
             Design e impressão de qualidade no Litoral Norte!
           </p>
