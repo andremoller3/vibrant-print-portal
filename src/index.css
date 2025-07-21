@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    --primary: 328 100% 46%;
+    --primary: 22 100% 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 13% 10%;
@@ -32,7 +32,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 328 100% 46%;
+    --ring: 22 100% 50%;
 
     --radius: 0.5rem;
   }
@@ -47,7 +47,7 @@
     --popover: 0 0% 10%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 328 100% 46%;
+    --primary: 22 100% 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 15%;
@@ -64,7 +64,7 @@
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 328 100% 46%;
+    --ring: 22 100% 50%;
   }
 }
 
@@ -113,7 +113,7 @@
   
   .section-title h2:after {
     content: "";
-    @apply absolute bottom-0 left-1/2 w-16 h-1 bg-vecinos-primary -translate-x-1/2 mt-2;
+    @apply absolute bottom-0 left-1/2 w-16 h-1 bg-primary -translate-x-1/2 mt-2;
   }
   
   .btn {
@@ -121,15 +121,15 @@
   }
   
   .btn-primary {
-    @apply bg-vecinos-primary text-white hover:bg-opacity-90 shadow-md hover:shadow-lg;
+    @apply bg-primary text-white hover:bg-opacity-90 shadow-md hover:shadow-lg;
   }
   
   .btn-secondary {
-    @apply bg-vecinos-dark text-white hover:bg-opacity-90 shadow-md hover:shadow-lg;
+    @apply bg-secondary text-white hover:bg-opacity-90 shadow-md hover:shadow-lg;
   }
 
   .btn-outline {
-    @apply border-2 border-vecinos-primary text-vecinos-primary hover:bg-vecinos-primary hover:text-white;
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
   }
 
   .glass-card {
@@ -158,12 +158,12 @@
   }
   
   .nav-link {
-    @apply relative px-3 py-2 transition-colors duration-300 hover:text-vecinos-primary;
+    @apply relative px-3 py-2 transition-colors duration-300 hover:text-primary;
   }
   
   .nav-link:after {
     content: '';
-    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-vecinos-primary transition-all duration-300;
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
   }
   
   .nav-link:hover:after {
@@ -175,7 +175,7 @@
   }
   
   .social-icon {
-    @apply w-10 h-10 flex items-center justify-center rounded-full bg-white text-vecinos-dark transition-all duration-300 hover:bg-vecinos-primary hover:text-white;
+    @apply w-10 h-10 flex items-center justify-center rounded-full bg-white text-secondary transition-all duration-300 hover:bg-primary hover:text-white;
   }
   
   .contact-info-item {
@@ -183,7 +183,7 @@
   }
   
   .contact-icon {
-    @apply w-10 h-10 flex items-center justify-center rounded-full bg-vecinos-primary text-white flex-shrink-0;
+    @apply w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white flex-shrink-0;
   }
 
   .animate-on-scroll {
